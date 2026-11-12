@@ -2,921 +2,860 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#fff8f6">
-<meta name="description" content="GabsShop by Lastri. Beauty, fashion, travel and everyday finds curated with love.">
-<title>GabsShop ♡ Curated Finds by Lastri</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GabsMe — Curated by Sulastri Hutajulu | Anti-Boncos Picks</title>
+<meta name="description" content="Kurasi barang pilihan Sulastri Hutajulu. In this economy, setiap rupiah harus worth it. Temukan produk patut beli dari Beauty & Care, Fashion & OOTD, Outdoor & Adventure, Travel & Beach, Daily Essentials, hingga Home Decor.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root {
-  --pink:#ed9db5;
-  --pinkdark:#b94f78;
-  --pinklight:#fff0f3;
-  --cream:#fffaf6;
-  --blue:#dceef7;
-  --text:#443842;
-  --muted:#8d7a85;
-  --white:#ffffff;
-  --border:#f2dfe5;
-  --shadow:0 10px 30px rgba(130,75,95,.1);
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;
-  background:var(--cream);
-  color:var(--text);
-  font-family:"DM Sans",sans-serif;
-}
-button,input{font:inherit}
-a{text-decoration:none;color:inherit}
-img{display:block;max-width:100%}
-.container{width:min(1150px,92%);margin:auto}
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* HEADER */
-header{
-  position:sticky;
-  top:0;
-  z-index:100;
-  background:rgba(255,250,246,.95);
-  backdrop-filter:blur(15px);
-  border-bottom:1px solid var(--border);
-}
-.nav{
-  min-height:75px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
-}
-.logo{
-  font-family:"Playfair Display",serif;
-  font-size:29px;
-  font-weight:700;
-  color:var(--pinkdark);
-}
-.logo span{color:var(--pink)}
-.navlinks{display:flex;gap:25px;align-items:center}
-.navlinks a{font-size:13px;font-weight:600}
-.navlinks a:hover{color:var(--pinkdark)}
-.instagram-nav{
-  background:var(--pinklight);
-  padding:10px 16px;
-  border-radius:25px;
-  color:var(--pinkdark);
-  font-size:12px;
-  font-weight:700;
-}
+  :root {
+    --bg: #FAF5EE;
+    --bg-warm: #F3E9DC;
+    --surface: #FFFDF9;
+    --surface-tint: #F7EFE4;
+    --forest: #1B4332;
+    --sage: #2D6A4F;
+    --sage-soft: #E3EFE8;
+    --terracotta: #C85A32;
+    --terracotta-deep: #A6411E;
+    --terracotta-soft: #FCECE6;
+    --marigold: #E09F3E;
+    --marigold-soft: #FDF3E1;
+    --hibiscus: #D1496E;
+    --hibiscus-soft: #FCE8EE;
+    --plum: #6D4C7D;
+    --plum-soft: #F2ECF6;
+    --ocean: #2A6F7B;
+    --ocean-soft: #E4F1F3;
+    --ink: #241D18;
+    --muted: #6E6259;
+    --border: rgba(45, 106, 79, 0.16);
+    --radius: 22px;
+    --shadow: 0 14px 36px rgba(36, 29, 24, 0.08);
+    --shadow-hover: 0 22px 46px rgba(200, 90, 50, 0.16);
+  }
 
-/* HERO */
-.hero{
-  background:linear-gradient(115deg,#fff4f1,#fce2e8,#dceef7);
-  overflow:hidden;
-}
-.hero-inner{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  align-items:center;
-  gap:55px;
-  padding:85px 0;
-}
-.eyebrow{
-  text-transform:uppercase;
-  font-size:11px;
-  letter-spacing:3px;
-  color:var(--pinkdark);
-  font-weight:700;
-  margin-bottom:20px;
-}
-.hero h1{
-  font-family:"Playfair Display",serif;
-  font-size:clamp(43px,5vw,72px);
-  line-height:1.13;
-  margin:0 0 25px;
-  font-weight:600;
-}
-.hero h1 em{color:var(--pinkdark);font-weight:400}
-.hero p{
-  font-size:15px;
-  line-height:1.9;
-  max-width:440px;
-  color:#77636e;
-}
-.hero-photo{position:relative}
-.hero-photo img{
-  width:100%;
-  height:510px;
-  object-fit:cover;
-  border-radius:220px 220px 25px 25px;
-  box-shadow:var(--shadow);
-}
-.photo-note{
-  position:absolute;
-  bottom:25px;
-  left:-25px;
-  padding:18px 25px;
-  border-radius:15px;
-  background:rgba(255,255,255,.95);
-  box-shadow:var(--shadow);
-  font-family:"Playfair Display",serif;
-  font-style:italic;
-  color:var(--pinkdark);
-}
-.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
-.btn{
-  display:inline-flex;
-  justify-content:center;
-  align-items:center;
-  padding:14px 24px;
-  border-radius:30px;
-  font-size:13px;
-  font-weight:700;
-  transition:.2s;
-}
-.btn:hover{transform:translateY(-2px)}
-.btn-primary{background:var(--pinkdark);color:white}
-.btn-outline{
-  color:var(--pinkdark);
-  border:1px solid var(--pinkdark);
-  background:rgba(255,255,255,.6);
-}
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
 
-/* GENERAL SECTIONS */
-section{scroll-margin-top:90px}
-.section{padding:85px 0}
-.section-heading{
-  text-align:center;
-  margin-bottom:42px;
-}
-.section-number{
-  color:var(--pinkdark);
-  font-size:11px;
-  font-weight:700;
-  letter-spacing:3px;
-  text-transform:uppercase;
-}
-.section-heading h2{
-  font-family:"Playfair Display",serif;
-  font-size:clamp(32px,4vw,45px);
-  margin:12px 0;
-  font-weight:600;
-}
-.section-heading p{
-  color:var(--muted);
-  font-size:14px;
-  line-height:1.8;
-}
+  /* RIBBON MARQUEE */
+  .top-ribbon {
+    background: linear-gradient(90deg, var(--forest) 0%, var(--terracotta) 50%, var(--hibiscus) 100%);
+    color: #FFFDF9;
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 9px 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .marquee-track {
+    display: inline-flex;
+    gap: 40px;
+    animation: marquee 28s linear infinite;
+  }
+  @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
-/* CATEGORY */
-.category-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-.category-card{
-  position:relative;
-  height:270px;
-  border:0;
-  padding:0;
-  background:#eee;
-  border-radius:20px;
-  overflow:hidden;
-  cursor:pointer;
-  text-align:left;
-}
-.category-card img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  transition:transform .45s;
-}
-.category-card:hover img{transform:scale(1.08)}
-.category-card:after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(transparent 35%,rgba(32,22,30,.72));
-}
-.category-info{
-  position:absolute;
-  bottom:23px;
-  left:23px;
-  z-index:2;
-  color:white;
-}
-.category-info small{
-  display:block;
-  letter-spacing:2px;
-  margin-bottom:6px;
-  font-size:10px;
-  text-transform:uppercase;
-}
-.category-info strong{
-  font-family:"Playfair Display",serif;
-  font-size:24px;
-}
+  /* NAV */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    padding: 14px 40px;
+    display: flex; align-items: center; justify-content: space-between;
+    background: rgba(250, 245, 238, 0.92);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid var(--border);
+  }
+  .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+  .brand-avatar {
+    width: 42px; height: 42px; border-radius: 50%; object-fit: cover;
+    border: 2px solid var(--terracotta); background: var(--marigold-soft);
+  }
+  .logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 27px; font-weight: 700; font-style: italic;
+    color: var(--forest); line-height: 1;
+  }
+  .logo span { color: var(--terracotta); }
+  .logo-sub {
+    font-size: 10px; text-transform: uppercase; letter-spacing: 0.14em;
+    color: var(--muted); font-weight: 600; margin-top: 2px;
+  }
+  .nav-links { display: flex; align-items: center; gap: 22px; }
+  .nav-links a { font-size: 13px; font-weight: 600; color: var(--ink); text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--terracotta); }
+  .nav-badge {
+    font-size: 11px; font-weight: 700; color: var(--forest);
+    background: linear-gradient(135deg, var(--marigold-soft), var(--sage-soft));
+    border: 1px solid rgba(45, 106, 79, 0.25);
+    padding: 6px 14px; border-radius: 50px; letter-spacing: 0.06em;
+  }
 
-/* PRODUCTS */
-.shop-section{background:#fff4f5}
-.shop-toolbar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  flex-wrap:wrap;
-  gap:20px;
-  margin-bottom:30px;
-}
-.filters{display:flex;gap:9px;flex-wrap:wrap}
-.filter{
-  border:1px solid #ebd7df;
-  background:white;
-  border-radius:30px;
-  padding:10px 15px;
-  cursor:pointer;
-  font-size:12px;
-}
-.filter.active,.filter:hover{
-  background:var(--pinkdark);
-  border-color:var(--pinkdark);
-  color:white;
-}
-.search{
-  border:1px solid #ecdce2;
-  background:white;
-  border-radius:30px;
-  padding:12px 18px;
-  outline:none;
-  width:240px;
-  max-width:100%;
-}
-.search:focus{border-color:var(--pinkdark)}
-.product-grid{
-  display:grid;
-  grid-template-columns:repeat(4,minmax(0,1fr));
-  gap:20px;
-}
-.product{
-  background:white;
-  border:1px solid var(--border);
-  border-radius:18px;
-  overflow:hidden;
-  transition:.25s;
-}
-.product:hover{
-  transform:translateY(-5px);
-  box-shadow:var(--shadow);
-}
-.product-image{position:relative;overflow:hidden}
-.product-image img{
-  width:100%;
-  aspect-ratio:1/1;
-  object-fit:cover;
-  background:#fff;
-}
-.product-badge{
-  position:absolute;
-  top:12px;
-  left:12px;
-  background:white;
-  color:var(--pinkdark);
-  padding:8px 11px;
-  border-radius:30px;
-  font-size:10px;
-  font-weight:700;
-  box-shadow:0 2px 10px #00000012;
-}
-.product-body{padding:19px}
-.product-cat{
-  color:var(--pinkdark);
-  font-size:10px;
-  font-weight:700;
-  text-transform:uppercase;
-  letter-spacing:1px;
-}
-.product h3{
-  font-size:14px;
-  line-height:1.5;
-  margin:10px 0;
-}
-.product-desc{
-  font-size:12px;
-  color:var(--muted);
-  line-height:1.7;
-  min-height:60px;
-}
-.price{
-  color:var(--pinkdark);
-  font-weight:700;
-  margin:14px 0 3px;
-  font-size:16px;
-}
-.price-note{font-size:10px;color:var(--muted)}
-.shopee{
-  display:block;
-  margin-top:15px;
-  text-align:center;
-  background:var(--pinkdark);
-  color:white;
-  padding:12px 8px;
-  border-radius:25px;
-  font-size:12px;
-  font-weight:700;
-}
-.shopee:hover{background:#a63e65}
-.no-results{
-  grid-column:1/-1;
-  text-align:center;
-  color:var(--muted);
-  padding:45px;
-}
-.shop-count{
-  color:var(--muted);
-  font-size:12px;
-  margin-bottom:20px;
-}
+  /* HERO */
+  .hero {
+    max-width: 1240px; margin: 0 auto;
+    padding: 48px 40px 56px;
+    display: grid; grid-template-columns: 1.05fr 0.95fr;
+    gap: 44px; align-items: center; position: relative;
+  }
+  .hero-glow {
+    position: absolute; top: -30px; right: 4%;
+    width: 420px; height: 420px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(224,159,62,0.25) 0%, rgba(209,73,110,0.14) 45%, transparent 72%);
+    pointer-events: none; z-index: 0;
+  }
+  .hero-copy { position: relative; z-index: 1; }
+  .curator-pill {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--surface); border: 1px solid var(--border);
+    padding: 6px 16px 6px 6px; border-radius: 50px; margin-bottom: 20px;
+    box-shadow: 0 6px 18px rgba(36, 29, 24, 0.05);
+  }
+  .curator-pill img { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; }
+  .curator-pill span { font-size: 12px; font-weight: 700; color: var(--forest); }
+  .curator-pill .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--terracotta); }
 
-/* ABOUT */
-.about-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:75px;
-  align-items:center;
-}
-.about-photo img{
-  width:100%;
-  height:460px;
-  object-fit:cover;
-  border-radius:230px 230px 25px 25px;
-}
-.about-text h2{
-  font-family:"Playfair Display",serif;
-  font-size:45px;
-  font-weight:600;
-  line-height:1.2;
-}
-.about-text p{
-  color:#756771;
-  line-height:2;
-  font-size:15px;
-}
-.about-tags{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0}
-.about-tags span{
-  background:var(--pinklight);
-  color:var(--pinkdark);
-  padding:9px 13px;
-  border-radius:30px;
-  font-size:11px;
-}
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(38px, 5vw, 64px);
+    font-weight: 700; line-height: 1.06; color: var(--forest); margin-bottom: 18px;
+  }
+  .hero h1 em {
+    font-style: italic;
+    background: linear-gradient(120deg, var(--terracotta) 0%, var(--hibiscus) 55%, var(--marigold) 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .hero-sub { font-size: 15.5px; color: var(--muted); line-height: 1.75; max-width: 530px; margin-bottom: 28px; }
+  .hero-sub strong { color: var(--ink); }
 
-/* CONNECT */
-.connect{
-  background:linear-gradient(120deg,#f9dce5,#e4eff9);
-  text-align:center;
-}
-.connect h2{
-  font-family:"Playfair Display",serif;
-  font-size:clamp(32px,4vw,48px);
-  font-weight:600;
-}
-.connect p{
-  max-width:550px;
-  margin:15px auto;
-  color:#736571;
-  line-height:1.9;
-}
-.connect .buttons{justify-content:center}
-.dm-box{
-  max-width:620px;
-  margin:35px auto 0;
-  background:rgba(255,255,255,.72);
-  border-radius:20px;
-  padding:25px;
-}
-.dm-box h3{
-  font-family:"Playfair Display",serif;
-  margin:0;
-  font-size:23px;
-}
+  .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 34px; }
+  .btn-primary {
+    padding: 14px 30px; border-radius: 50px;
+    background: linear-gradient(135deg, var(--terracotta), var(--hibiscus));
+    color: #fff; font-weight: 700; font-size: 13.5px;
+    text-decoration: none; border: none; cursor: pointer;
+    box-shadow: 0 12px 26px rgba(200, 90, 50, 0.28); transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 32px rgba(200, 90, 50, 0.36); }
+  .btn-secondary {
+    padding: 14px 28px; border-radius: 50px;
+    background: var(--surface); color: var(--forest);
+    font-weight: 700; font-size: 13.5px; text-decoration: none;
+    border: 1.5px solid var(--forest); transition: all 0.2s;
+  }
+  .btn-secondary:hover { background: var(--forest); color: #fff; }
 
-/* FOOTER */
-footer{
-  background:#fffaf7;
-  padding:45px 20px;
-  text-align:center;
-  border-top:1px solid var(--border);
-}
-.footer-logo{
-  font-family:"Playfair Display",serif;
-  color:var(--pinkdark);
-  font-size:28px;
-  font-weight:700;
-}
-footer p{
-  color:var(--muted);
-  font-size:12px;
-  line-height:1.8;
-  max-width:650px;
-  margin:12px auto;
-}
-footer a{color:var(--pinkdark)}
-footer small{color:#ac9aa3}
+  .hero-stats { display: flex; gap: 32px; flex-wrap: wrap; padding-top: 20px; border-top: 1px solid var(--border); }
+  .stat-num { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 700; color: var(--terracotta); }
+  .stat-label { font-size: 11.5px; color: var(--muted); font-weight: 600; }
 
-/* MOBILE */
-@media(max-width:900px){
-  .product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .hero-inner{gap:30px}
-  .about-grid{gap:35px}
-}
-@media(max-width:650px){
-  .nav{min-height:65px;flex-wrap:wrap;padding:10px 0}
-  .logo{font-size:25px}
-  .navlinks{order:3;width:100%;justify-content:center;gap:20px}
-  .navlinks a{font-size:12px}
-  .instagram-nav{font-size:11px;padding:8px 11px}
-  .hero-inner{grid-template-columns:1fr;padding:45px 0 65px}
-  .hero h1{font-size:47px}
-  .hero-photo img{height:340px}
-  .photo-note{left:10px;bottom:-15px}
-  .section{padding:60px 0}
-  .category-grid{grid-template-columns:repeat(2,1fr);gap:12px}
-  .category-card{height:200px}
-  .category-info{left:14px;bottom:15px}
-  .category-info strong{font-size:19px}
-  .category-info small{font-size:9px}
-  .product-grid{gap:12px}
-  .product-body{padding:13px}
-  .product h3{font-size:13px}
-  .product-desc{font-size:11px;min-height:76px}
-  .shop-toolbar{align-items:stretch}
-  .search{width:100%}
-  .about-grid{grid-template-columns:1fr}
-  .about-photo img{height:340px}
-  .about-text h2{font-size:36px}
-}
+  /* COLLAGE */
+  .hero-collage {
+    position: relative; z-index: 1;
+    display: grid; grid-template-columns: 1.1fr 0.9fr; grid-template-rows: 220px 210px;
+    gap: 14px;
+  }
+  .collage-card {
+    position: relative; border-radius: 24px; overflow: hidden;
+    box-shadow: var(--shadow); border: 3px solid #FFFDF9;
+    background: var(--bg-warm);
+  }
+  .collage-card.tall { grid-row: span 2; }
+  .collage-card img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
+  .collage-card:hover img { transform: scale(1.05); }
+  .collage-tag {
+    position: absolute; bottom: 12px; left: 12px;
+    background: rgba(27, 67, 50, 0.85); backdrop-filter: blur(8px);
+    color: #fff; font-size: 10.5px; font-weight: 700;
+    padding: 5px 12px; border-radius: 50px; letter-spacing: 0.06em;
+  }
+
+  /* PROMISE BANNER */
+  .promise-strip {
+    max-width: 1240px; margin: 0 auto 24px; padding: 0 40px;
+  }
+  .promise-box {
+    background: linear-gradient(135deg, var(--forest) 0%, #265943 60%, var(--terracotta-deep) 100%);
+    color: #FFFDF9; border-radius: 26px; padding: 26px 34px;
+    display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;
+    box-shadow: var(--shadow);
+  }
+  .promise-left { display: flex; align-items: center; gap: 18px; max-width: 720px; }
+  .promise-left img {
+    width: 62px; height: 62px; border-radius: 50%; object-fit: cover;
+    border: 2.5px solid var(--marigold); flex-shrink: 0;
+  }
+  .promise-title { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+  .promise-desc { font-size: 13.5px; color: rgba(255,253,249,0.88); line-height: 1.6; }
+
+  /* CATEGORY SECTION */
+  .cat-section { max-width: 1240px; margin: 0 auto; padding: 42px 40px 24px; }
+  .section-head { text-align: center; margin-bottom: 34px; }
+  .section-eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--terracotta); margin-bottom: 8px;
+  }
+  .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(30px, 4vw, 44px); font-weight: 700; color: var(--forest); }
+  .section-sub { font-size: 14px; color: var(--muted); margin-top: 6px; font-style: italic; }
+
+  .cat-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+  }
+  .cat-card {
+    position: relative; height: 220px; border-radius: 22px; overflow: hidden;
+    cursor: pointer; border: 2.5px solid transparent;
+    box-shadow: var(--shadow); transition: all 0.3s ease;
+    background: var(--forest);
+  }
+  .cat-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); }
+  .cat-card.active { border-color: var(--terracotta); box-shadow: 0 0 0 4px rgba(200,90,50,0.22); }
+  .cat-card img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+    transition: transform 0.5s ease; filter: brightness(0.84);
+  }
+  .cat-card:hover img { transform: scale(1.06); }
+  .cat-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(20,16,13,0.08) 25%, rgba(20,16,13,0.78) 100%);
+    padding: 22px; display: flex; flex-direction: column; justify-content: flex-end;
+  }
+  .cat-count {
+    position: absolute; top: 14px; right: 14px;
+    background: rgba(255,253,249,0.92); color: var(--forest);
+    font-size: 11px; font-weight: 700; padding: 4px 11px; border-radius: 50px;
+  }
+  .cat-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--marigold); margin-bottom: 4px; }
+  .cat-name { font-family: 'Cormorant Garamond', serif; font-size: 27px; font-weight: 700; color: #fff; line-height: 1.1; }
+
+  /* CATALOG CONTROLS & LIST 1-30 */
+  .catalog-section { max-width: 1240px; margin: 0 auto; padding: 28px 40px 80px; }
+  .catalog-bar {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 22px; padding: 20px 24px; margin-bottom: 26px;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+    box-shadow: 0 8px 24px rgba(36,29,24,0.04);
+  }
+  .active-cat-info h3 { font-family: 'Cormorant Garamond', serif; font-size: 28px; color: var(--forest); }
+  .active-cat-info p { font-size: 12.5px; color: var(--muted); }
+
+  .controls-right { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .search-input {
+    padding: 10px 18px; border-radius: 50px; border: 1px solid var(--border);
+    background: var(--bg); color: var(--ink); font-size: 13px; width: 240px; outline: none;
+  }
+  .search-input:focus { border-color: var(--terracotta); }
+
+  .view-toggle { display: inline-flex; background: var(--bg-warm); padding: 4px; border-radius: 50px; }
+  .view-btn {
+    padding: 7px 15px; border-radius: 50px; border: none; background: transparent;
+    font-size: 12px; font-weight: 700; color: var(--muted); cursor: pointer; transition: all 0.2s;
+  }
+  .view-btn.active { background: var(--forest); color: #fff; }
+
+  /* LIST 1-30 VIEW */
+  .numbered-list { display: flex; flex-direction: column; gap: 12px; }
+  .list-row {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 18px; padding: 14px 20px;
+    display: grid; grid-template-columns: 44px 64px 1fr auto auto;
+    gap: 16px; align-items: center;
+    transition: all 0.2s ease;
+  }
+  .list-row:hover { border-color: var(--terracotta); transform: translateX(4px); box-shadow: var(--shadow); }
+  .row-no {
+    width: 38px; height: 38px; border-radius: 12px;
+    background: linear-gradient(135deg, var(--terracotta-soft), var(--marigold-soft));
+    color: var(--terracotta-deep); font-weight: 700; font-size: 14px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .row-thumb {
+    width: 60px; height: 60px; border-radius: 12px; object-fit: cover;
+    background: var(--bg-warm);
+  }
+  .row-title { font-weight: 700; font-size: 14.5px; color: var(--ink); margin-bottom: 4px; }
+  .row-why {
+    display: inline-block; font-size: 12px; color: var(--sage);
+    background: var(--sage-soft); padding: 3px 10px; border-radius: 50px; font-weight: 600;
+  }
+  .row-price-box { text-align: right; }
+  .row-price { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 700; color: var(--forest); }
+  .row-orig { font-size: 11.5px; color: var(--muted); text-decoration: line-through; }
+  .btn-buy {
+    padding: 10px 20px; border-radius: 50px;
+    background: linear-gradient(135deg, var(--terracotta), var(--hibiscus));
+    color: #fff; font-size: 12.5px; font-weight: 700; text-decoration: none;
+    white-space: nowrap; transition: opacity 0.2s;
+  }
+  .btn-buy:hover { opacity: 0.9; }
+
+  /* GRID CARD VIEW */
+  .cards-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 22px;
+  }
+  .p-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 22px; overflow: hidden; display: flex; flex-direction: column;
+    transition: all 0.25s ease;
+  }
+  .p-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); border-color: var(--terracotta); }
+  .p-card-img { width: 100%; aspect-ratio: 1/1; object-fit: cover; background: var(--bg-warm); }
+  .p-card-body { padding: 18px; display: flex; flex-direction: column; flex: 1; }
+  .p-card-no { font-size: 11px; font-weight: 700; color: var(--terracotta); margin-bottom: 4px; }
+  .p-card-name { font-weight: 700; font-size: 14.5px; color: var(--ink); margin-bottom: 8px; line-height: 1.4; }
+  .p-card-why { font-size: 12px; color: var(--sage); background: var(--sage-soft); padding: 6px 10px; border-radius: 10px; margin-bottom: 12px; }
+  .p-card-price { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 700; color: var(--forest); margin-top: auto; margin-bottom: 12px; }
+
+  /* REAL MOMENTS GALLERY */
+  .moments-section { max-width: 1240px; margin: 0 auto; padding: 10px 40px 80px; }
+  .moments-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .moment-item {
+    position: relative; height: 270px; border-radius: 22px; overflow: hidden;
+    cursor: pointer; box-shadow: var(--shadow);
+  }
+  .moment-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+  .moment-item:hover img { transform: scale(1.06); }
+  .moment-cap {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 45%, rgba(20,16,13,0.82) 100%);
+    padding: 18px; display: flex; flex-direction: column; justify-content: flex-end; color: #fff;
+  }
+  .moment-cap span { font-size: 10.5px; color: var(--marigold); font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; }
+  .moment-cap h4 { font-family: 'Cormorant Garamond', serif; font-size: 21px; }
+
+  footer {
+    background: var(--forest); color: rgba(255,253,249,0.85);
+    text-align: center; padding: 44px 24px; font-size: 13px;
+  }
+  footer .f-logo { font-family: 'Cormorant Garamond', serif; font-size: 30px; font-style: italic; font-weight: 700; color: #fff; margin-bottom: 6px; }
+
+  @media (max-width: 960px) {
+    .hero { grid-template-columns: 1fr; padding: 36px 20px; }
+    .cat-grid { grid-template-columns: repeat(2, 1fr); }
+    .moments-grid { grid-template-columns: repeat(2, 1fr); }
+    .list-row { grid-template-columns: 38px 52px 1fr; }
+    .row-price-box, .btn-buy { grid-column: 3; text-align: left; width: fit-content; }
+  }
+  @media (max-width: 600px) {
+    nav { padding: 12px 18px; }
+    .nav-links { display: none; }
+    .cat-grid { grid-template-columns: 1fr; }
+    .cat-section, .catalog-section, .promise-strip, .moments-section { padding-left: 18px; padding-right: 18px; }
+  }
 </style>
 </head>
-
 <body>
 
-<!-- NAVIGATION -->
-<header>
-  <nav class="container nav">
-    <a href="#home" class="logo">Gabs<span>Shop ♡</span></a>
-    <div class="navlinks">
-      <a href="#home">Home</a>
-      <a href="#shop">Shop</a>
-      <a href="#about">About</a>
-    </div>
-    <a class="instagram-nav"
-       href="https://www.instagram.com/sulastrihutajuluu/"
-       target="_blank" rel="noopener noreferrer">
-      ♡ Instagram
-    </a>
-  </nav>
-</header>
+<div class="top-ribbon">
+  <div class="marquee-track">
+    <span>✦ IN THIS ECONOMY: SETIAP RUPIAH HARUS WORTH IT</span>
+    <span>✦ CURATED PERSONALLY BY SULASTRI HUTAJULU</span>
+    <span>✦ BUKAN SEKADAR RACUN, TAPI BARANG YANG BENARAN TERPAKAI</span>
+    <span>✦ 6 KATEGORI PILIHAN · LIST 1–30 PER KATEGORI</span>
+    <span>✦ IN THIS ECONOMY: SETIAP RUPIAH HARUS WORTH IT</span>
+    <span>✦ CURATED PERSONALLY BY SULASTRI HUTAJULU</span>
+    <span>✦ BUKAN SEKADAR RACUN, TAPI BARANG YANG BENARAN TERPAKAI</span>
+    <span>✦ 6 KATEGORI PILIHAN · LIST 1–30 PER KATEGORI</span>
+  </div>
+</div>
 
-<main>
-
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="container hero-inner">
+<nav>
+  <a href="#" class="brand">
+    <img id="nav-avatar" src="images/sulastri-hero.jpg" alt="Sulastri Hutajulu" class="brand-avatar">
     <div>
-      <div class="eyebrow">GabsShop — Curated by Lastri</div>
-      <h1>
-        A little bit of
-        <em>everything I love.</em>
-      </h1>
-      <p>
-        Things I love, finds worth sharing.
-        Beauty, fashion, travel, home and everyday
-        discoveries — curated with love.
-      </p>
-      <div class="buttons">
-        <a class="btn btn-primary" href="#shop">
-          Explore My Finds ♡
-        </a>
-        <a class="btn btn-outline" href="#categories">
-          Browse Categories
-        </a>
-      </div>
+      <div class="logo">Gabs<span>Me</span></div>
+      <div class="logo-sub">Sulastri Hutajulu</div>
     </div>
-
-    <div class="hero-photo">
-      <!-- GANTI FOTO INI DENGAN FOTO PERSONAL LASTRI -->
-      <img
-        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&q=85"
-        alt="Tropical beach lifestyle"
-      >
-      <div class="photo-note">
-        Life, style & little discoveries ♡
-      </div>
-    </div>
+  </a>
+  <div class="nav-links">
+    <a href="#kategori">6 Kategori</a>
+    <a href="#katalog">List 1–30</a>
+    <a href="#moments">Real Moments</a>
   </div>
-</section>
+  <div class="nav-badge">✦ Anti-Boncos Picks</div>
+</nav>
 
-<!-- CATEGORIES -->
-<section class="section" id="categories">
-  <div class="container">
-    <div class="section-heading">
-      <div class="section-number">01 — Discover</div>
-      <h2>Explore by Category ♡</h2>
-      <p>A little collection of things I love.</p>
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-copy">
+    <div class="curator-pill">
+      <img id="pill-avatar" src="images/sulastri-hero.jpg" alt="Sulastri">
+      <span class="dot"></span>
+      <span>Official Page · Sulastri Hutajulu</span>
     </div>
-
-    <div class="category-grid">
-
-      <button class="category-card" data-category="Beauty & Care">
-        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=700&q=85" alt="Beauty products" loading="lazy">
-        <div class="category-info">
-          <small>Everyday glow</small>
-          <strong>Beauty & Care</strong>
-        </div>
-      </button>
-
-      <button class="category-card" data-category="Fashion & OOTD">
-        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=700&q=85" alt="Fashion" loading="lazy">
-        <div class="category-info">
-          <small>Corporate girl style</small>
-          <strong>Fashion & OOTD</strong>
-        </div>
-      </button>
-
-      <button class="category-card" data-category="Outdoor & Adventure">
-        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=700&q=85" alt="Adventure" loading="lazy">
-        <div class="category-info">
-          <small>Explore more</small>
-          <strong>Outdoor & Adventure</strong>
-        </div>
-      </button>
-
-      <button class="category-card" data-category="Travel & Beach">
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=700&q=85" alt="Beach" loading="lazy">
-        <div class="category-info">
-          <small>Ocean lover</small>
-          <strong>Travel & Beach</strong>
-        </div>
-      </button>
-
-      <button class="category-card" data-category="Daily Essentials">
-        <img src="https://images.unsplash.com/photo-1547949003-9792a18a2601?w=700&q=85" alt="Daily essentials" loading="lazy">
-        <div class="category-info">
-          <small>Little favorites</small>
-          <strong>Daily Essentials</strong>
-        </div>
-      </button>
-
-      <button class="category-card" data-category="Home Decor">
-        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=700&q=85" alt="Home decor" loading="lazy">
-        <div class="category-info">
-          <small>Cozy corners</small>
-          <strong>Home Decor</strong>
-        </div>
-      </button>
-
-    </div>
-  </div>
-</section>
-
-<!-- SHOP -->
-<section class="section shop-section" id="shop">
-  <div class="container">
-    <div class="section-heading">
-      <div class="section-number">02 — Shop My Finds</div>
-      <h2>My Curated Finds ♡</h2>
-      <p>
-        Little things worth checking out.
-        Handpicked for everyday life.
-      </p>
-    </div>
-
-    <div class="shop-toolbar">
-      <div class="filters" id="filters">
-        <button class="filter active" data-filter="All">All Finds</button>
-        <button class="filter" data-filter="Beauty & Care">Beauty</button>
-        <button class="filter" data-filter="Fashion & OOTD">Fashion</button>
-        <button class="filter" data-filter="Outdoor & Adventure">Adventure</button>
-        <button class="filter" data-filter="Travel & Beach">Travel</button>
-        <button class="filter" data-filter="Daily Essentials">Daily</button>
-        <button class="filter" data-filter="Home Decor">Home</button>
-      </div>
-      <input
-        id="search"
-        class="search"
-        type="search"
-        placeholder="Search my finds..."
-        aria-label="Cari produk"
-      >
-    </div>
-
-    <p class="shop-count" id="productCount"></p>
-    <div class="product-grid" id="productGrid"></div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="section" id="about">
-  <div class="container about-grid">
-    <div class="about-photo">
-      <!-- GANTI DENGAN FOTO DIRIMU SENDIRI -->
-      <img
-        src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=900&q=85"
-        alt="Travel lifestyle inspiration"
-        loading="lazy"
-      >
-    </div>
-
-    <div class="about-text">
-      <div class="section-number">03 — A Little About Me</div>
-      <h2>Hi, I'm Lastri! ✨</h2>
-      <p>
-        A corporate girl by weekdays, explorer by heart.
-      </p>
-      <p>
-        I love beauty, fashion, traveling, and finding
-        little things that make everyday life better.
-      </p>
-      <p>
-        Here, I share my favorite discoveries,
-        lifestyle inspiration, and products
-        worth checking out.
-      </p>
-      <p>
-        From everyday beauty essentials to office
-        outfits, beach adventures and cozy home finds —
-        welcome to my little corner!
-      </p>
-
-      <div class="about-tags">
-        <span>♡ Beauty Lover</span>
-        <span>♡ Corporate Girl</span>
-        <span>♡ Beach & Travel</span>
-        <span>♡ Everyday Finds</span>
-      </div>
-
-      <a class="btn btn-primary"
-         href="https://www.instagram.com/sulastrihutajuluu/"
-         target="_blank" rel="noopener noreferrer">
-        Get to Know Me ♡
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- CONNECT -->
-<section class="section connect" id="connect">
-  <div class="container">
-    <div class="section-number">04 — Let's Connect</div>
-    <h2>Follow my little adventures ♡</h2>
-    <p>
-      More about my life, travels, outfits,
-      beauty finds, and everyday stories.
+    <h1><em>In This Economy,</em> Belanja Harus Cerdas & <em>Patut Dibeli.</em></h1>
+    <p class="hero-sub">
+      Hai, aku <strong>Sulastri Hutajulu</strong>. Semua yang masuk ke halaman <strong>GabsMe</strong> ini adalah barang-barang yang sudah aku seleksi ketat—awet, kepakai harian, dan harganya masuk akal. Nggak ada drama barang nganggur di lemari.
     </p>
-
-    <div class="buttons">
-      <a class="btn btn-primary"
-         href="https://www.instagram.com/sulastrihutajuluu/"
-         target="_blank" rel="noopener noreferrer">
-        Follow @sulastrihutajuluu
-      </a>
+    <div class="hero-cta">
+      <a href="#kategori" class="btn-primary">Jelajahi 6 Kategori Pilihan →</a>
+      <a href="#katalog" class="btn-secondary">Lihat List 1–30</a>
     </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">180</div>
+        <div class="stat-label">Kurasi List (30 × 6 Kategori)</div>
+      </div>
+      <div>
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Lolos Uji Anti-Boncos</div>
+      </div>
+      <div>
+        <div class="stat-num">⭐ 4.9</div>
+        <div class="stat-label">Rating Toko Terpercaya</div>
+      </div>
+    </div>
+  </div>
 
-    <div class="dm-box">
-      <h3>Want me to spill something? 💌</h3>
-      <p>
-        Looking for something?
-        Ada produk, outfit, skincare, atau barang
-        yang ingin kamu tahu? Drop me a DM!
-      </p>
-      <a class="btn btn-outline"
-         href="https://ig.me/m/sulastrihutajuluu"
-         target="_blank" rel="noopener noreferrer">
-        Request a Product ♡
-      </a>
+  <div class="hero-collage">
+    <div class="collage-card tall">
+      <img id="hero-img-1" src="images/sulastri-beach.jpg" alt="Sulastri Beach Vibe">
+      <div class="collage-tag">☀ Tropical & Resort</div>
+    </div>
+    <div class="collage-card">
+      <img id="hero-img-2" src="images/sulastri-chic.jpg" alt="Sulastri Chic City">
+      <div class="collage-tag">✦ Corporate & Chic</div>
+    </div>
+    <div class="collage-card">
+      <img id="hero-img-3" src="images/sulastri-mountain.jpg" alt="Sulastri Adventure">
+      <div class="collage-tag">▲ Outdoor & Summit</div>
     </div>
   </div>
 </section>
 
-</main>
+<div class="promise-strip">
+  <div class="promise-box">
+    <div class="promise-left">
+      <img id="promise-avatar" src="images/sulastri-gallery.jpg" alt="Sulastri Hutajulu">
+      <div>
+        <div class="promise-title">Janji Kurasi Sulastri Hutajulu</div>
+        <div class="promise-desc">Di era serba mahal seperti sekarang, aku cuma taruh link produk yang kualitasnya jauh di atas harganya. Klik kategori di bawah untuk buka daftar lengkap nomor 1 sampai 30!</div>
+      </div>
+    </div>
+    <a href="#kategori" class="btn-primary" style="background:#FFFDF9; color:var(--forest);">Pilih Kategori ↓</a>
+  </div>
+</div>
 
-<!-- FOOTER -->
+<section class="cat-section" id="kategori">
+  <div class="section-head">
+    <div class="section-eyebrow">Curated Collections</div>
+    <h2 class="section-title">A Little Collection of Things I Love</h2>
+    <p class="section-sub">Klik salah satu kategori di bawah untuk melihat daftar lengkap #1 – #30</p>
+  </div>
+  <div class="cat-grid" id="cat-grid"></div>
+</section>
+
+<section class="catalog-section" id="katalog">
+  <div class="catalog-bar">
+    <div class="active-cat-info">
+      <h3 id="active-cat-title">Beauty & Care (#1 – #30)</h3>
+      <p id="active-cat-desc">Skincare & bodycare harian yang benar-benar bekerja tanpa bikin kantong jebol.</p>
+    </div>
+    <div class="controls-right">
+      <input type="text" id="search-box" class="search-input" placeholder="Cari di kategori ini...">
+      <div class="view-toggle">
+        <button class="view-btn active" id="btn-list" onclick="setView('list')">List 1–30</button>
+        <button class="view-btn" id="btn-grid" onclick="setView('grid')">Kartu Visual</button>
+      </div>
+    </div>
+  </div>
+  <div id="catalog-container"></div>
+</section>
+
+<section class="moments-section" id="moments">
+  <div class="section-head">
+    <div class="section-eyebrow">Real Lifestyle · Sulastri Hutajulu</div>
+    <h2 class="section-title">Dipakai Langsung di Setiap Momen</h2>
+  </div>
+  <div class="moments-grid">
+    <div class="moment-item" onclick="selectCategory('travel')">
+      <img id="mom-1" src="images/sulastri-hero.jpg" alt="Pantai & Resort">
+      <div class="moment-cap"><span>Travel & Beach</span><h4>Topi Pantai & Sunglasses</h4></div>
+    </div>
+    <div class="moment-item" onclick="selectCategory('fashion')">
+      <img id="mom-2" src="images/sulastri-resort.jpg" alt="Chic Outfit">
+      <div class="moment-cap"><span>Fashion & OOTD</span><h4>Blouse Pita & Rok Plisket</h4></div>
+    </div>
+    <div class="moment-item" onclick="selectCategory('outdoor')">
+      <img id="mom-3" src="images/sulastri-mountain.jpg" alt="Hiking Gunung">
+      <div class="moment-cap"><span>Outdoor & Adventure</span><h4>Trekking Pole & Daypack</h4></div>
+    </div>
+    <div class="moment-item" onclick="selectCategory('daily')">
+      <img id="mom-4" src="images/sulastri-night.jpg" alt="Night Vlog">
+      <div class="moment-cap"><span>Daily Essentials</span><h4>Gimbal & Gadget Konten</h4></div>
+    </div>
+  </div>
+</section>
+
 <footer>
-  <div class="footer-logo">GabsShop ♡</div>
-  <p>Things I love, finds worth sharing.</p>
-  <p>
-    Curated with love by Lastri.
-    <a href="https://www.instagram.com/sulastrihutajuluu/"
-       target="_blank" rel="noopener noreferrer">
-      Instagram
-    </a>
-  </p>
-  <p>
-    Affiliate disclosure:
-    Beberapa tautan produk di website ini merupakan
-    affiliate link. Aku mungkin menerima komisi
-    dari pembelian yang memenuhi syarat,
-    tanpa biaya tambahan untuk kamu.
-    Harga dan ketersediaan dapat berubah di Shopee.
-  </p>
-  <small>©️ 2026 GabsShop. All rights reserved.</small>
+  <div class="f-logo">GabsMe</div>
+  <p>Curated with love & honesty by <strong>Sulastri Hutajulu</strong> · Anti-Boncos Affiliate Storefront</p>
 </footer>
 
 <script>
+// ============================================================================
+// 1. FOTO PRIBADI SULASTRI HUTAJULU (Simpan di folder images/ di repo Git kamu)
+// ============================================================================
+const MY_PHOTOS = {
+  hero: "images/sulastri-hero.jpg",
+  beach: "images/sulastri-beach.jpg",
+  mountain: "images/sulastri-mountain.jpg",
+  chic: "images/sulastri-chic.jpg",
+  night: "images/sulastri-night.jpg",
+  resort: "images/sulastri-resort.jpg",
+  pool: "images/sulastri-pool.jpg",
+  gallery: "images/sulastri-gallery.jpg"
+};
 
-/* ===========================================
-   GABSSHOP PRODUCT COLLECTION
-   EDIT / ADD PRODUCTS HERE
-=========================================== */
+// Fallback otomatis jika foto lokal belum di-upload ke folder images/
+const FALLBACK_IMG = "data:image/svg+xml;utf8," + encodeURIComponent(
+  `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+    <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#E3EFE8"/><stop offset="50%" stop-color="#FDF3E1"/><stop offset="100%" stop-color="#FCECE6"/></linearGradient></defs>
+    <rect width="600" height="600" fill="url(#g)"/>
+    <circle cx="300" cy="260" r="95" fill="#C85A32" opacity="0.18"/>
+    <text x="300" y="310" font-family="Georgia,serif" font-style="italic" font-size="38" fill="#1B4332" text-anchor="middle">GabsMe · Sulastri</text>
+  </svg>`
+);
 
-const PRODUCTS = [
-
-  {
-    id:1,
-    name:"Sunscreen : Rice + Probiotics",
-    category:"Beauty & Care",
-    price:"click shopee",
-    label:"BEAUTY PICK",
-    description:"Sunscreen SPF 50+ PA++++ untuk perlindungan wajah dari paparan sinar matahari.",
-    image:"",
-    link:"https://s.shopee.co.id/3VlkX7gwUJ"
-  },
-
-  {
-    id:2,
-    name:"WARDAH Lip Balm Hydrabalm Lip Care",
-    category:"Beauty & Care",
-    price:"Rp 32.000",
-    label:"DAILY ESSENTIAL",
-    description:"Lip balm dengan Vitamin E untuk membantu menjaga kelembapan bibir. Cocok melengkapi daily makeup routine.",
-    image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0r-mdod618m95inee.webp",
-    link:"https://s.shopee.co.id/2qW3kEAWwa"
-  },
-
-  {
-    id:3,
-    name:"Autumn 7% Glycolic Acid Exfoliating Toner",
-    category:"Beauty & Care",
-    price:"Rp 46.000",
-    label:"SKINCARE FIND",
-    description:"Exfoliating toner dengan kandungan glycolic acid 7% untuk membantu mengangkat sel kulit mati. Gunakan sesuai kebutuhan dan toleransi kulit.",
-    image:"https://down-id.img.susercontent.com/file/id-11134207-8224o-mk0j2t0k1log96.webp",
-    link:"https://s.shopee.co.id/4fxhvlMP5A"
-  },
-
-  {
-    id:4,
-    name:"Hanasui Power Bright Expert Serum",
-    category:"Beauty & Care",
-    price:"Rp 36.430",
-    label:"BUDGET FRIENDLY",
-    description:"Serum perawatan wajah yang diformulasikan untuk membantu menyamarkan noda bekas jerawat dan meratakan tampilan warna kulit.",
-    image:"https://down-id.img.susercontent.com/file/id-11134207-7ra0g-mdmx69u1o2ic46.webp",
-    link:"https://s.shopee.co.id/2gCdY19dPE"
-  }
-
-];
-
-/* ===========================================
-   WEBSITE FUNCTIONS
-=========================================== */
-
-const grid = document.getElementById("productGrid");
-const search = document.getElementById("search");
-const productCount = document.getElementById("productCount");
-let activeCategory = "All";
-let searchTerm = "";
-
-function createProductCard(product) {
-
-  const card = document.createElement("article");
-  card.className = "product";
-
-  const imageWrap = document.createElement("div");
-  imageWrap.className = "product-image";
-
-  const img = document.createElement("img");
-  img.src = product.image;
-  img.alt = product.name;
-  img.loading = "lazy";
-  imageWrap.appendChild(img);
-
-  if(product.label) {
-    const badge = document.createElement("span");
-    badge.className = "product-badge";
-    badge.textContent = product.label;
-    imageWrap.appendChild(badge);
-  }
-
-  const body = document.createElement("div");
-  body.className = "product-body";
-
-  const category = document.createElement("div");
-  category.className = "product-cat";
-  category.textContent = product.category;
-
-  const title = document.createElement("h3");
-  title.textContent = product.name;
-
-  const desc = document.createElement("p");
-  desc.className = "product-desc";
-  desc.textContent = product.description;
-
-  const price = document.createElement("div");
-  price.className = "price";
-  price.textContent = "Mulai " + product.price;
-
-  const note = document.createElement("div");
-  note.className = "price-note";
-  note.textContent = "Harga indikatif · Cek harga terbaru di Shopee";
-
-  const link = document.createElement("a");
-  link.className = "shopee";
-  link.href = product.link;
-  link.target = "_blank";
-  link.rel = "noopener noreferrer sponsored";
-  link.textContent = "Check on Shopee ↗️";
-
-  body.append(category,title,desc,price,note,link);
-  card.append(imageWrap,body);
-
-  return card;
+function applyPhotos() {
+  const map = [
+    ["nav-avatar", MY_PHOTOS.hero],
+    ["pill-avatar", MY_PHOTOS.hero],
+    ["hero-img-1", MY_PHOTOS.beach],
+    ["hero-img-2", MY_PHOTOS.chic],
+    ["hero-img-3", MY_PHOTOS.mountain],
+    ["promise-avatar", MY_PHOTOS.gallery],
+    ["mom-1", MY_PHOTOS.hero],
+    ["mom-2", MY_PHOTOS.resort],
+    ["mom-3", MY_PHOTOS.mountain],
+    ["mom-4", MY_PHOTOS.night]
+  ];
+  map.forEach(([id, src]) => {
+    const el = document.getElementById(id);
+    if (el) { el.src = src; el.onerror = () => { el.src = FALLBACK_IMG; }; }
+  });
 }
 
-function renderProducts() {
-  grid.replaceChildren();
+// ============================================================================
+// 2. DATA 6 KATEGORI & LIST 1–30 PER KATEGORI (MUDAH DIEDIT)
+// ============================================================================
+const CATEGORIES = [
+  { id: "beauty", eyebrow: "EVERYDAY GLOW", name: "Beauty & Care", desc: "Skincare, lipcare & bodycare yang kerjanya nyata di kulit.", cover: "https://down-id.img.susercontent.com/file/id-11134207-81ztq-mf6mus83jaq690.webp" },
+  { id: "fashion", eyebrow: "CORPORATE & CHIC", name: "Fashion & OOTD", desc: "Outfit rapi, cardigan rajut, tas & aksesoris timeless.", cover: MY_PHOTOS.chic },
+  { id: "outdoor", eyebrow: "EXPLORE MORE", name: "Outdoor & Adventure", desc: "Perlengkapan naik gunung, trekking & aktivitas luar ruang.", cover: MY_PHOTOS.mountain },
+  { id: "travel", eyebrow: "OCEAN LOVER", name: "Travel & Beach", desc: "Topi pantai, sunglasses & pouch liburan anti-ribet.", cover: MY_PHOTOS.beach },
+  { id: "daily", eyebrow: "LITTLE FAVORITES", name: "Daily Essentials", desc: "Gadget, tumbler, gimbal & printilan produktif harian.", cover: MY_PHOTOS.night },
+  { id: "home", eyebrow: "COZY CORNERS", name: "Home Decor", desc: "Dekorasi kamar earth-tone & organizer rumah estetik.", cover: MY_PHOTOS.resort }
+];
 
-  const filtered = PRODUCTS.filter(product => {
+const PRODUCTS_BY_CATEGORY = {
+  // ── 1. BEAUTY & CARE (1–30) ──
+  beauty: [
+    { no: 1, name: "UNITARY Sunscreen All Skin Solutions SPF50 PA++++", price: "Rp 45.000", orig: "Rp 79.000", why: "Ringan, no whitecast, proteksi maksimal", img: "https://down-id.img.susercontent.com/file/id-11134207-81ztq-mf6mus83jaq690.webp", link: "https://s.shopee.co.id/5VSpDlxAdn" },
+    { no: 2, name: "WARDAH Lip Balm Hydrabalm Lip Care", price: "Rp 31.000", orig: "Rp 62.400", why: "Lembap 12 jam, warna sheer natural", img: "https://down-id.img.susercontent.com/file/id-11134207-7ra0r-mdod618m95inee.webp", link: "https://s.shopee.co.id/5ApyrId5sH" },
+    { no: 3, name: "Autumn 7% Glycolic Acid Exfoliating Toner", price: "Rp 68.000", orig: "Rp 100.000", why: "Angkat sel kulit mati & bikin glowing", img: "https://down-id.img.susercontent.com/file/id-11134207-8224o-mk0j2t0k1log96.webp", link: "https://s.shopee.co.id/7Ab4lSUcfD" },
+    { no: 4, name: "Hanasui Power Bright Expert Serum", price: "Rp 36.430", orig: "Rp 42.858", why: "Pudarkan bekas jerawat dalam 7 hari", img: "https://down-id.img.susercontent.com/file/id-11134207-7ra0g-mdmx69u1o2ic46.webp", link: "https://s.shopee.co.id/8pjIl91iZl" },
+    { no: 5, name: "Skintific 5X Ceramide Barrier Moisture Gel", price: "Rp 119.000", orig: "Rp 169.000", why: "Penyelamat skin barrier saat iritasi", link: "https://shopee.co.id/" },
+    { no: 6, name: "Micellar Water Rose Gentle Makeup Remover", price: "Rp 34.000", orig: "Rp 49.000", why: "Hapus sunscreen bersih tanpa perih", link: "https://shopee.co.id/" },
+    { no: 7, name: "Facial Wash Low pH Amino Acid Cleanser", price: "Rp 42.000", orig: "Rp 65.000", why: "Nggak bikin kulit ketarik habis cuci muka", link: "https://shopee.co.id/" },
+    { no: 8, name: "Niacinamide 10% + Zinc Brightening Serum", price: "Rp 55.000", orig: "Rp 85.000", why: "Kontrol minyak & cerahkan kulit kusam", link: "https://shopee.co.id/" },
+    { no: 9, name: "Centella Asiatica Calming Sheet Mask (5 Pcs)", price: "Rp 39.000", orig: "Rp 60.000", why: "Ademin kulit habis panas-panasan", link: "https://shopee.co.id/" },
+    { no: 10, name: "Lip Tint Velvet Watery Stain Tahan Lama", price: "Rp 38.000", orig: "Rp 58.000", why: "Stain cantik & nggak bikin bibir pecah", link: "https://shopee.co.id/" },
+    { no: 11, name: "Body Lotion Niacinamide + Shea Butter SPF", price: "Rp 48.000", orig: "Rp 75.000", why: "Lembap seharian & wangi mewah", link: "https://shopee.co.id/" },
+    { no: 12, name: "Body Scrub Kopi & Bengkoang Pencerah", price: "Rp 32.000", orig: "Rp 50.000", why: "Haluskan kulit siku & lutut", link: "https://shopee.co.id/" },
+    { no: 13, name: "Hair Vitamin Argan Oil Anti-Frizz", price: "Rp 29.000", orig: "Rp 45.000", why: "Rambut gampang diatur & berkilau", link: "https://shopee.co.id/" },
+    { no: 14, name: "Eye Cream Peptide & Caffeine Anti-Panda", price: "Rp 64.000", orig: "Rp 95.000", why: "Bantu samarkan mata sembab begadang", link: "https://shopee.co.id/" },
+    { no: 15, name: "Translucent Loose Powder Oil Control", price: "Rp 52.000", orig: "Rp 78.000", why: "Kunci makeup biar anti-minyak seharian", link: "https://shopee.co.id/" },
+    { no: 16, name: "Cushion Dewy Natural Coverage SPF35", price: "Rp 98.000", orig: "Rp 145.000", why: "Praktis touch-up, hasil kulit sehat", link: "https://shopee.co.id/" },
+    { no: 17, name: "Eyebrow Pencil Micro-Tip Waterproof", price: "Rp 27.000", orig: "Rp 42.000", why: "Ujung tipis gampang gambar serat alis", link: "https://shopee.co.id/" },
+    { no: 18, name: "Mascara Lengthening & Curl Anti-Luntur", price: "Rp 49.000", orig: "Rp 72.000", why: "Bulu mata lentik seharian tanpa smudge", link: "https://shopee.co.id/" },
+    { no: 19, name: "Cream Blush Peach Terracotta Natural", price: "Rp 44.000", orig: "Rp 68.000", why: "Masuk banget di undertone kulit sawo matang", link: "https://shopee.co.id/" },
+    { no: 20, name: "Acne Patch Hydrocolloid Tipis Transparan", price: "Rp 22.000", orig: "Rp 35.000", why: "Kempesin jerawat matang semalaman", link: "https://shopee.co.id/" },
+    { no: 21, name: "Clay Mask Mugwort Pore Clarifying", price: "Rp 59.000", orig: "Rp 89.000", why: "Bersihkan komedo & pori tersumbat", link: "https://shopee.co.id/" },
+    { no: 22, name: "Sunscreen Spray Reapply Mist SPF50", price: "Rp 58.000", orig: "Rp 85.000", why: "Reapply sunscreen di atas makeup anti-ribet", link: "https://shopee.co.id/" },
+    { no: 23, name: "Hand Cream Shea & Chamomile Travel Size", price: "Rp 24.000", orig: "Rp 38.000", why: "Tangan lembut walau sering kena AC", link: "https://shopee.co.id/" },
+    { no: 24, name: "Lip Sleeping Mask Berry Overnight", price: "Rp 41.000", orig: "Rp 65.000", why: "Bibir kenyal & pink alami pas bangun", link: "https://shopee.co.id/" },
+    { no: 25, name: "Setting Spray Matte & Dewy Lock 12H", price: "Rp 54.000", orig: "Rp 80.000", why: "Makeup nempel awet di cuaca panas", link: "https://shopee.co.id/" },
+    { no: 26, name: "Deodorant Serum AHA BHA Brightening", price: "Rp 35.000", orig: "Rp 52.000", why: "Bebas bau badan & cerahkan ketiak", link: "https://shopee.co.id/" },
+    { no: 27, name: "Eau De Parfum Vanilla Woody Floral 50ml", price: "Rp 89.000", orig: "Rp 149.000", why: "Wangi mahal & tahan 6–8 jam", link: "https://shopee.co.id/" },
+    { no: 28, name: "Silicone Facial Cleansing Brush", price: "Rp 25.000", orig: "Rp 45.000", why: "Bantu bersihkan area hidung lebih tuntas", link: "https://shopee.co.id/" },
+    { no: 29, name: "Beauty Blender Sponge Super Soft + Case", price: "Rp 21.000", orig: "Rp 39.000", why: "Ngembang 2x lipat & nggak nyerep produk", link: "https://shopee.co.id/" },
+    { no: 30, name: "Hair Mask Keratin & Aloe Spa Rumahan", price: "Rp 46.000", orig: "Rp 70.000", why: "Perawatan salon hemat di rumah", link: "https://shopee.co.id/" }
+  ],
 
-    const categoryMatch =
-      activeCategory === "All" ||
-      product.category === activeCategory;
+  // ── 2. FASHION & OOTD (1–30) ──
+  fashion: [
+    { no: 1, name: "Cardigan Rajut Bolong Crochet Cream", price: "Rp 89.000", orig: "Rp 145.000", why: "Adem buat outer pantai maupun ngopi", link: "https://shopee.co.id/" },
+    { no: 2, name: "Blouse Pita Chiffon Putih Elegant", price: "Rp 95.000", orig: "Rp 155.000", why: "Auto kelihatan classy buat kerja & acara", link: "https://shopee.co.id/" },
+    { no: 3, name: "Rok Plisket Panjang Premium Anti-Kusut", price: "Rp 79.000", orig: "Rp 129.000", why: "Jatuhnya anggun & nggak perlu disetrika", link: "https://shopee.co.id/" },
+    { no: 4, name: "Kemeja Rayon Twill Maroon Earth Tone", price: "Rp 85.000", orig: "Rp 135.000", why: "Warna mewah bikin kulit tampak cerah", link: "https://shopee.co.id/" },
+    { no: 5, name: "Celana Kulot Highwaist Linen Blend", price: "Rp 92.000", orig: "Rp 149.000", why: "Bikin kaki jenjang & super nyaman", link: "https://shopee.co.id/" },
+    { no: 6, name: "Tas Bahu Rajut Anyaman Tassel Boho", price: "Rp 78.000", orig: "Rp 125.000", why: "Muat banyak & estetik buat OOTD", link: "https://shopee.co.id/" },
+    { no: 7, name: "Kacamata Hitam Retro Oval UV400", price: "Rp 39.000", orig: "Rp 75.000", why: "Frame pas di wajah Asia & foto-ready", link: "https://shopee.co.id/" },
+    { no: 8, name: "Jepit Rambut Bunga Kamboja Bali Aesthetic", price: "Rp 15.000", orig: "Rp 29.000", why: "Aksen manis instan di rambut", link: "https://shopee.co.id/" },
+    { no: 9, name: "Anting Mutiara Drop Minimalis Gold", price: "Rp 24.000", orig: "Rp 45.000", why: "Anti-karat & bikin wajah kelihatan anggun", link: "https://shopee.co.id/" },
+    { no: 10, name: "Scarf Syal Satin Motif Vintage", price: "Rp 29.000", orig: "Rp 55.000", why: "Bisa jadi dasi leher atau hiasan tas", link: "https://shopee.co.id/" },
+    { no: 11, name: "Loafers Wanita Cream & Black Empuk", price: "Rp 135.000", orig: "Rp 210.000", why: "Sol empuk jalan seharian nggak lecet", link: "https://shopee.co.id/" },
+    { no: 12, name: "Blazer Casual Linen Sand Oversized", price: "Rp 149.000", orig: "Rp 230.000", why: "Smart-casual look dalam 5 detik", link: "https://shopee.co.id/" },
+    { no: 13, name: "Midi Dress Floral Cotton Adem", price: "Rp 115.000", orig: "Rp 175.000", why: "Flowy banget kena angin & menyerap keringat", link: "https://shopee.co.id/" },
+    { no: 14, name: "Inner Manset Kaos Rayon Premium", price: "Rp 38.000", orig: "Rp 59.000", why: "Adem & nggak gampang melar", link: "https://shopee.co.id/" },
+    { no: 15, name: "Sandal Tali Flat Minimalis Terracotta", price: "Rp 69.000", orig: "Rp 110.000", why: "Antislip & cocok dipadu sama rok/celana", link: "https://shopee.co.id/" },
+    { no: 16, name: "Sling Bag Kulit Sintetis Floral Klasik", price: "Rp 119.000", orig: "Rp 189.000", why: "Jahitan rapi & kompartemen lengkap", link: "https://shopee.co.id/" },
+    { no: 17, name: "Ikat Pinggang Kulit Tipis Buckle Gold", price: "Rp 32.000", orig: "Rp 55.000", why: "Bikin siluet pinggang lebih rapi", link: "https://shopee.co.id/" },
+    { no: 18, name: "Kaos Basic Ribbed Knit Earth Tone", price: "Rp 54.000", orig: "Rp 85.000", why: "Bahan tebal & nggak menerawang", link: "https://shopee.co.id/" },
+    { no: 19, name: "Jam Tangan Wanita Strap Kulit Cokelat", price: "Rp 88.000", orig: "Rp 150.000", why: "Tampilan klasik yang awet dipakai", link: "https://shopee.co.id/" },
+    { no: 20, name: "Setelan One Set Knit Loungewear", price: "Rp 125.000", orig: "Rp 195.000", why: "Nyaman di rumah, tetap cakep keluar", link: "https://shopee.co.id/" },
+    { no: 21, name: "Kalung Rantai Tipis Liontin Minimalis", price: "Rp 28.000", orig: "Rp 49.000", why: "Titanium anti-hitam kena keringat", link: "https://shopee.co.id/" },
+    { no: 22, name: "Totebag Kanvas Tebal Resleting + Kantong", price: "Rp 49.000", orig: "Rp 79.000", why: "Muat laptop 14 inch & botol minum", link: "https://shopee.co.id/" },
+    { no: 23, name: "Kaos Kaki Invisible Anti-Slip (5 Pasang)", price: "Rp 25.000", orig: "Rp 42.000", why: "Wajib punya buat pakai loafers & sneakers", link: "https://shopee.co.id/" },
+    { no: 24, name: "Sweater Rajut Kerah V-Neck Sage Green", price: "Rp 94.000", orig: "Rp 145.000", why: "Pas banget buat cuaca mendung atau kantor ber-AC", link: "https://shopee.co.id/" },
+    { no: 25, name: "Celana Jeans Straight Cut Vintage Blue", price: "Rp 139.000", orig: "Rp 215.000", why: "Potongan lurus bikin kaki tampak ramping", link: "https://shopee.co.id/" },
+    { no: 26, name: "Pashmina Ceruty Babydoll Earth Palette", price: "Rp 34.000", orig: "Rp 55.000", why: "Gampang dibentuk & jatuh rapi", link: "https://shopee.co.id/" },
+    { no: 27, name: "Brooch Peniti Mutiara & Daun Gold", price: "Rp 19.000", orig: "Rp 35.000", why: "Detail kecil yang bikin baju polos naik kelas", link: "https://shopee.co.id/" },
+    { no: 28, name: "Bra Seamless Tanpa Kawat Super Nyaman", price: "Rp 45.000", orig: "Rp 75.000", why: "Nggak nyeplak di baju & breathable", link: "https://shopee.co.id/" },
+    { no: 29, name: "Piyama Satin Katun Adem Motif Botanical", price: "Rp 85.000", orig: "Rp 130.000", why: "Tidur makin nyenyak & adem", link: "https://shopee.co.id/" },
+    { no: 30, name: "Hair Claw Jedai Matte Doff Kuat (3 Pcs)", price: "Rp 18.000", orig: "Rp 32.000", why: "Nggak gampang patah untuk rambut tebal", link: "https://shopee.co.id/" }
+  ],
 
-    const keyword = searchTerm.toLowerCase();
+  // ── 3. OUTDOOR & ADVENTURE (1–30) ──
+  outdoor: [
+    { no: 1, name: "Trekking Pole Lipat Aluminium Ringan", price: "Rp 85.000", orig: "Rp 135.000", why: "Bantu jaga lutut pas nanjak & turun gunung", link: "https://shopee.co.id/" },
+    { no: 2, name: "Daypack Hiking 25L Water Repellent", price: "Rp 139.000", orig: "Rp 220.000", why: "Ringan, banyak slot & tahan gerimis", link: "https://shopee.co.id/" },
+    { no: 3, name: "Jaket Windbreaker Gunung Anti-Angin", price: "Rp 159.000", orig: "Rp 245.000", why: "Tahan angin puncak tapi tetap ringan dilipat", link: "https://shopee.co.id/" },
+    { no: 4, name: "Sepatu Trail & Hiking Grip Anti-Licin", price: "Rp 245.000", orig: "Rp 380.000", why: "Outsole menggigit di jalur berbatu & tanah", link: "https://shopee.co.id/" },
+    { no: 5, name: "Celana Cargo Quick-Dry Stretch Wanita", price: "Rp 129.000", orig: "Rp 195.000", why: "Cepat kering kena kabut & bebas bergerak", link: "https://shopee.co.id/" },
+    { no: 6, name: "Headlamp LED Rechargeable 5 Mode", price: "Rp 55.000", orig: "Rp 89.000", why: "Terang banget buat summit attack subuh", link: "https://shopee.co.id/" },
+    { no: 7, name: "Kaos Kaki Gunung Tebal Cushion (2 Pasang)", price: "Rp 39.000", orig: "Rp 65.000", why: "Cegah lecet & jaga kaki tetap hangat", link: "https://shopee.co.id/" },
+    { no: 8, name: "Buff Masker Multifungsi Anti-Debu & UV", price: "Rp 19.000", orig: "Rp 35.000", why: "Lindungi leher & wajah dari debu jalur", link: "https://shopee.co.id/" },
+    { no: 9, name: "Sarung Tangan Fleece Touch Screen", price: "Rp 35.000", orig: "Rp 58.000", why: "Tetap bisa pencet HP di suhu dingin", link: "https://shopee.co.id/" },
+    { no: 10, name: "Raincover Tas Ransel 30–40L Reflektif", price: "Rp 28.000", orig: "Rp 48.000", why: "Isi tas aman kering saat hujan mendadak", link: "https://shopee.co.id/" },
+    { no: 11, name: "Jas Hujan Ponco Outdoor Bahan Ripstop", price: "Rp 79.000", orig: "Rp 125.000", why: "Nggak gampang sobek kena ranting", link: "https://shopee.co.id/" },
+    { no: 12, name: "Botol Minum Lipat BPA Free 750ml + Carabiner", price: "Rp 34.000", orig: "Rp 55.000", why: "Hemat ruang tas saat air sudah habis", link: "https://shopee.co.id/" },
+    { no: 13, name: "Kursi Lipat Camping Portable Ultra Ringan", price: "Rp 95.000", orig: "Rp 149.000", why: "Asyik buat santai nikmati view pegunungan", link: "https://shopee.co.id/" },
+    { no: 14, name: "Matras Foil Aluminium Lipat Camping", price: "Rp 48.000", orig: "Rp 78.000", why: "Tahan dingin dari tanah saat istirahat", link: "https://shopee.co.id/" },
+    { no: 15, name: "Topi Rimba Bucket Hat Tali Dagu", price: "Rp 42.000", orig: "Rp 69.000", why: "Nggak terbang kena angin kencang", link: "https://shopee.co.id/" },
+    { no: 16, name: "Kompor Portable Mini Windproof + Case", price: "Rp 75.000", orig: "Rp 115.000", why: "Seduh kopi hangat di puncak dalam 3 menit", link: "https://shopee.co.id/" },
+    { no: 17, name: "Cooking Set Nesting Aluminium 2 Orang", price: "Rp 89.000", orig: "Rp 135.000", why: "Ringkas masuk tas, lengkap panci & teko", link: "https://shopee.co.id/" },
+    { no: 18, name: "First Aid Kit Pouch P3K Lengkap Travel", price: "Rp 45.000", orig: "Rp 72.000", why: "Wajib ada di setiap perjalanan outdoor", link: "https://shopee.co.id/" },
+    { no: 19, name: "Emergency Blanket Thermal Foil", price: "Rp 16.000", orig: "Rp 30.000", why: "Perlindungan darurat penahan suhu tubuh", link: "https://shopee.co.id/" },
+    { no: 20, name: "Kacamata Sport Polarized Anti-Silau", price: "Rp 58.000", orig: "Rp 95.000", why: "Lindungi mata dari pantulan sinar di ketinggian", link: "https://shopee.co.id/" },
+    { no: 21, name: "Dry Bag Waterproof 10L Anti-Air", price: "Rp 44.000", orig: "Rp 70.000", why: "Amankan HP, dompet & baju ganti", link: "https://shopee.co.id/" },
+    { no: 22, name: "Handuk Microfiber Quick-Dry Ukuran L", price: "Rp 38.000", orig: "Rp 62.000", why: "Daya serap tinggi & cepat kering diangin-angin", link: "https://shopee.co.id/" },
+    { no: 23, name: "Senter Mini Zoomable + Peluit Darurat", price: "Rp 32.000", orig: "Rp 52.000", why: "Kecil tapi sorot cahayanya jauh", link: "https://shopee.co.id/" },
+    { no: 24, name: "Kaos Baselayer Dri-Fit Lengan Panjang", price: "Rp 62.000", orig: "Rp 98.000", why: "Cepat buang keringat jadi badan nggak kedinginan", link: "https://shopee.co.id/" },
+    { no: 25, name: "Lampu Tenda Gantung LED Warm Light", price: "Rp 29.000", orig: "Rp 49.000", why: "Bikin suasana camp hangat & terang", link: "https://shopee.co.id/" },
+    { no: 26, name: "Carabiner Aluminium D-Ring (Set 4 Pcs)", price: "Rp 22.000", orig: "Rp 38.000", why: "Gantung tumbler atau topi di luar tas", link: "https://shopee.co.id/" },
+    { no: 27, name: "Gaiter Pelindung Sepatu Anti-Pasir & Lumpur", price: "Rp 54.000", orig: "Rp 85.000", why: "Kerikil nggak masuk sepatu pas turun jalur pasir", link: "https://shopee.co.id/" },
+    { no: 28, name: "Sleeping Bag Dacron Polar Hangat", price: "Rp 135.000", orig: "Rp 210.000", why: "Nyaman dipakai tidur di suhu 10–15°C", link: "https://shopee.co.id/" },
+    { no: 29, name: "Gelang Paracord Kompas & Pemantik", price: "Rp 24.000", orig: "Rp 42.000", why: "Aksesoris survival praktis di pergelangan tangan", link: "https://shopee.co.id/" },
+    { no: 30, name: "Krim Otot & Pegal Menthol Roll-On", price: "Rp 28.000", orig: "Rp 45.000", why: "Lega instan buat betis setelah trekking", link: "https://shopee.co.id/" }
+  ],
 
-    const searchMatch =
-      product.name.toLowerCase().includes(keyword) ||
-      product.category.toLowerCase().includes(keyword) ||
-      product.description.toLowerCase().includes(keyword);
+  // ── 4. TRAVEL & BEACH (1–30) ──
+  travel: [
+    { no: 1, name: "Topi Pantai Anyaman Lebar Pita Mutiara", price: "Rp 59.000", orig: "Rp 98.000", why: "Bisa dilipat masuk koper & super fotogenik", link: "https://shopee.co.id/" },
+    { no: 2, name: "Baju Renang Lengan Panjang UV Protection", price: "Rp 129.000", orig: "Rp 195.000", why: "Kulit aman dari belang & potongan sopan", link: "https://shopee.co.id/" },
+    { no: 3, name: "Travel Organizer Pouch Set 7-in-1", price: "Rp 45.000", orig: "Rp 79.000", why: "Koper rapi jali, baju & skincare terpisah", link: "https://shopee.co.id/" },
+    { no: 4, name: "Waterproof Phone Case Tali Leher Pantai", price: "Rp 19.000", orig: "Rp 35.000", why: "Bisa rekam video di kolam & pantai dengan aman", link: "https://shopee.co.id/" },
+    { no: 5, name: "Sandal Pantai EVA Empuk Anti-Air", price: "Rp 49.000", orig: "Rp 79.000", why: "Ringan, cepat kering & nggak licin", link: "https://shopee.co.id/" },
+    { no: 6, name: "Kain Pantai / Sarong Rayon Motif Tropis", price: "Rp 55.000", orig: "Rp 88.000", why: "Bisa jadi alas duduk pasir atau outer renang", link: "https://shopee.co.id/" },
+    { no: 7, name: "Botol Refill Skincare Travel Size Set (5 Pcs)", price: "Rp 24.000", orig: "Rp 42.000", why: "Lolos kabin pesawat & anti-tumpah", link: "https://shopee.co.id/" },
+    { no: 8, name: "Universal Travel Adapter All-in-One + USB-C", price: "Rp 79.000", orig: "Rp 125.000", why: "Dipakai di negara mana pun tetap aman", link: "https://shopee.co.id/" },
+    { no: 9, name: "Kacamata Renang Anti-Fog HD Clear", price: "Rp 48.000", orig: "Rp 75.000", why: "Nggak berembun & karet lembut di mata", link: "https://shopee.co.id/" },
+    { no: 10, name: "Bantal Leher Memory Foam Travel + Penutup Mata", price: "Rp 64.000", orig: "Rp 99.000", why: "Tidur nyenyak di pesawat & perjalanan jauh", link: "https://shopee.co.id/" },
+    { no: 11, name: "Tas Lipat Duffel Bag Tambahan Koper", price: "Rp 42.000", orig: "Rp 70.000", why: "Penyelamat bawa oleh-oleh pas pulang liburan", link: "https://shopee.co.id/" },
+    { no: 12, name: "Kipas Angin Mini Portable Rechargeable", price: "Rp 49.000", orig: "Rp 79.000", why: "Adem seketika pas antre atau jalan siang bolong", link: "https://shopee.co.id/" },
+    { no: 13, name: "Payung Lipat Mini UV Protection Ringan", price: "Rp 54.000", orig: "Rp 85.000", why: "Muat di sling bag kecil, tahan panas & hujan", link: "https://shopee.co.id/" },
+    { no: 14, name: "Timbangan Koper Digital Gantung Akurat", price: "Rp 39.000", orig: "Rp 65.000", why: "Anti-overweight di bandara", link: "https://shopee.co.id/" },
+    { no: 15, name: "Pouch Paspor & Dokumen RFID Blocking", price: "Rp 36.000", orig: "Rp 60.000", why: "Paspor, tiket & kartu rapi di satu tempat", link: "https://shopee.co.id/" },
+    { no: 16, name: "Aloe Vera Soothing Gel 99% After-Sun", price: "Rp 35.000", orig: "Rp 55.000", why: "Tenangkan kulit merah habis berjemur di pantai", link: "https://shopee.co.id/" },
+    { no: 17, name: "Tas Kosmetik Transparan Waterproof", price: "Rp 29.000", orig: "Rp 48.000", why: "Gampang cari barang tanpa bongkar semua", link: "https://shopee.co.id/" },
+    { no: 18, name: "Tali Koper Pengaman + Tag Nama", price: "Rp 22.000", orig: "Rp 38.000", why: "Koper gampang dikenali di bagasi bandara", link: "https://shopee.co.id/" },
+    { no: 19, name: "Setrika Uap Mini Lipat Travel", price: "Rp 98.000", orig: "Rp 155.000", why: "Baju tetap licin & rapi buat foto OOTD liburan", link: "https://shopee.co.id/" },
+    { no: 20, name: "Kantong Sepatu Travel Anti-Kotor (3 Pcs)", price: "Rp 21.000", orig: "Rp 36.000", why: "Sol sepatu nggak ngotorin baju bersih", link: "https://shopee.co.id/" },
+    { no: 21, name: "Tisu Basah Antiseptik Travel Pack", price: "Rp 15.000", orig: "Rp 25.000", why: "Praktis bersihkan tangan & meja makan di jalan", link: "https://shopee.co.id/" },
+    { no: 22, name: "Sarung Koper Elastis Motif Tropical", price: "Rp 58.000", orig: "Rp 92.000", why: "Lindungi koper dari lecet & baret", link: "https://shopee.co.id/" },
+    { no: 23, name: "Gembok Koper Kombinasi 3 Digit TSA", price: "Rp 27.000", orig: "Rp 45.000", why: "Keamanan ekstra tanpa takut kehilangan kunci", link: "https://shopee.co.id/" },
+    { no: 24, name: "Cermin Lipat LED Mini Touch-Up", price: "Rp 34.000", orig: "Rp 55.000", why: "Cahaya pas buat dandan di mobil atau pesawat", link: "https://shopee.co.id/" },
+    { no: 25, name: "Kotak Obat Harian Sekat 7 Hari", price: "Rp 16.000", orig: "Rp 28.000", why: "Vitamin & obat pribadi tertata rapi", link: "https://shopee.co.id/" },
+    { no: 26, name: "Hair Dryer Mini Lipat Dual Voltage", price: "Rp 89.000", orig: "Rp 139.000", why: "Keringkan rambut cepat habis renang", link: "https://shopee.co.id/" },
+    { no: 27, name: "Tote Bag Anyaman Pandan Lining Kain", price: "Rp 84.000", orig: "Rp 130.000", why: "Vibe liburan Bali banget & kuat", link: "https://shopee.co.id/" },
+    { no: 28, name: "Penutup Mata Tidur Sutra Lembut", price: "Rp 23.000", orig: "Rp 39.000", why: "Blokir cahaya lampu kabin/hotel dengan nyaman", link: "https://shopee.co.id/" },
+    { no: 29, name: "Sabun Kertas Lembaran Mini (3 Box)", price: "Rp 14.000", orig: "Rp 25.000", why: "Cuci tangan higienis di toilet umum mana pun", link: "https://shopee.co.id/" },
+    { no: 30, name: "Lotion Anti-Nyamuk & Serangga Wangi Lavender", price: "Rp 26.000", orig: "Rp 40.000", why: "Bebas gigitan nyamuk pas makan malam outdoor", link: "https://shopee.co.id/" }
+  ],
 
-    return categoryMatch && searchMatch;
-  });
+  // ── 5. DAILY ESSENTIALS (1–30) ──
+  daily: [
+    { no: 1, name: "Gimbal Stabilizer HP Lipat + Tripod Mini", price: "Rp 285.000", orig: "Rp 450.000", why: "Rekam video jalan & vlog anti-goyang", link: "https://shopee.co.id/" },
+    { no: 2, name: "Tumbler Stainless Vacuum Insulated 900ml", price: "Rp 89.000", orig: "Rp 145.000", why: "Es batu awet 24 jam & hemat beli minum luar", link: "https://shopee.co.id/" },
+    { no: 3, name: "Powerbank Slim 10.000mAh Fast Charging", price: "Rp 129.000", orig: "Rp 199.000", why: "Tipis masuk pouch, ngecas cepat & aman", link: "https://shopee.co.id/" },
+    { no: 4, name: "TWS Earbuds Bluetooth Low Latency + ANC", price: "Rp 145.000", orig: "Rp 230.000", why: "Suara jernih buat meeting & dengar musik", link: "https://shopee.co.id/" },
+    { no: 5, name: "Phone Holder Lipat Meja Aluminium", price: "Rp 29.000", orig: "Rp 49.000", why: "Kokoh buat nonton, video call & rekam konten", link: "https://shopee.co.id/" },
+    { no: 6, name: "Kabel Data Fast Charging Braided 3-in-1", price: "Rp 32.000", orig: "Rp 55.000", why: "Tahan tekukan & satu kabel untuk semua gadget", link: "https://shopee.co.id/" },
+    { no: 7, name: "Pouch Organizer Kabel & Charger Elektronik", price: "Rp 36.000", orig: "Rp 60.000", why: "Kabel nggak kusut lagi di dalam tas", link: "https://shopee.co.id/" },
+    { no: 8, name: "Lunch Box Sekat 3 Stainless + Tas Bekal", price: "Rp 68.000", orig: "Rp 105.000", why: "Bawa bekal kerja lebih hemat in this economy", link: "https://shopee.co.id/" },
+    { no: 9, name: "Mini Clip-On LED Selfie Light HP", price: "Rp 42.000", orig: "Rp 69.000", why: "Wajah tetap cerah pas foto/video malam hari", link: "https://shopee.co.id/" },
+    { no: 10, name: "Wireless Mic Clip-On untuk Konten HP", price: "Rp 95.000", orig: "Rp 155.000", why: "Audio jernih meski rekam di tempat ramai", link: "https://shopee.co.id/" },
+    { no: 11, name: "Laptop Stand Aluminium Ergonomis Lipat", price: "Rp 59.000", orig: "Rp 95.000", why: "Leher nggak pegal pas kerja depan laptop", link: "https://shopee.co.id/" },
+    { no: 12, name: "Mouse Wireless Silent Click Rechargeable", price: "Rp 54.000", orig: "Rp 88.000", why: "Nggak berisik di kafe & tanpa beli baterai", link: "https://shopee.co.id/" },
+    { no: 13, name: "Notebook Planner Harian Cover Linen", price: "Rp 38.000", orig: "Rp 62.000", why: "Atur jadwal & keuangan harian lebih terarah", link: "https://shopee.co.id/" },
+    { no: 14, name: "Set Pulpen Gel Tinta Hitam Halus (6 Pcs)", price: "Rp 19.000", orig: "Rp 32.000", why: "Enak buat nulis & cepat kering anti-coreng", link: "https://shopee.co.id/" },
+    { no: 15, name: "Dompet Kartu Slim Kulit Minimalis", price: "Rp 35.000", orig: "Rp 58.000", why: "Muat 10 kartu & uang tunai tanpa bikin tas penuh", link: "https://shopee.co.id/" },
+    { no: 16, name: "Gantungan Kunci Tracker / AirTag Holder", price: "Rp 24.000", orig: "Rp 42.000", why: "Kunci & tas gampang dilacak", link: "https://shopee.co.id/" },
+    { no: 17, name: "Lens Cleaner Kit Pembersih Layar & Kacamata", price: "Rp 22.000", orig: "Rp 38.000", why: "Kamera HP & lensa kacamata selalu bening", link: "https://shopee.co.id/" },
+    { no: 18, name: "Tripod Tongsis Bluetooth 1.6 Meter Kokoh", price: "Rp 69.000", orig: "Rp 115.000", why: "Bisa foto full body sendiri tanpa minta tolong", link: "https://shopee.co.id/" },
+    { no: 19, name: "Botol Minum Sedotan 600ml Anti-Tumpah", price: "Rp 44.000", orig: "Rp 70.000", why: "Praktis diminum sambil nyetir atau kerja", link: "https://shopee.co.id/" },
+    { no: 20, name: "Tas Bekal Insulated Tahan Panas & Dingin", price: "Rp 32.000", orig: "Rp 52.000", why: "Makanan tetap hangat sampai jam makan siang", link: "https://shopee.co.id/" },
+    { no: 21, name: "Alat Pembersih Bulu Baju Lint Roller", price: "Rp 18.000", orig: "Rp 30.000", why: "Baju hitam bebas debu & bulu sebelum meeting", link: "https://shopee.co.id/" },
+    { no: 22, name: "Sleeve Laptop Puffy Quilted 14 Inch", price: "Rp 65.000", orig: "Rp 99.000", why: "Empuk lindungi laptop dari benturan", link: "https://shopee.co.id/" },
+    { no: 23, name: "Charger GaN 33W Dual Port Fast Charge", price: "Rp 85.000", orig: "Rp 135.000", why: "Kecil tapi ngecas HP & tablet super cepat", link: "https://shopee.co.id/" },
+    { no: 24, name: "Desk Mat Kulit Sintetis Earth Tone", price: "Rp 45.000", orig: "Rp 75.000", why: "Meja kerja langsung rapi & nyaman buat mouse", link: "https://shopee.co.id/" },
+    { no: 25, name: "Kaca Pembesar & Cermin Saku Tipis", price: "Rp 16.000", orig: "Rp 28.000", why: "Selalu siap di saku tas kecil", link: "https://shopee.co.id/" },
+    { no: 26, name: "Sendok Garpu Sumpit Stainless Set + Box", price: "Rp 21.000", orig: "Rp 36.000", why: "Lebih higienis daripada alat makan plastik", link: "https://shopee.co.id/" },
+    { no: 27, name: "Card Holder Lanyard ID Card Kulit", price: "Rp 28.000", orig: "Rp 46.000", why: "Tampil profesional di kantor", link: "https://shopee.co.id/" },
+    { no: 28, name: "Mini Vacuum Cleaner Meja & Keyboard", price: "Rp 48.000", orig: "Rp 78.000", why: "Sedot remah makanan & debu meja kerja", link: "https://shopee.co.id/" },
+    { no: 29, name: "Gantungan Tas Lipat Meja Kafe", price: "Rp 19.000", orig: "Rp 34.000", why: "Tas kesayangan nggak perlu ditaruh di lantai", link: "https://shopee.co.id/" },
+    { no: 30, name: "Blue Light Blocking Glasses Anti-Radiasi", price: "Rp 49.000", orig: "Rp 82.000", why: "Mata nggak cepat lelah menatap layar seharian", link: "https://shopee.co.id/" }
+  ],
 
-  productCount.textContent =
-    filtered.length + " curated finds";
+  // ── 6. HOME DECOR (1–30) ──
+  home: [
+    { no: 1, name: "Lampu Meja Jamur Aesthetic Warm Light", price: "Rp 79.000", orig: "Rp 129.000", why: "Bikin suasana kamar langsung hangat & cozy", link: "https://shopee.co.id/" },
+    { no: 2, name: "Sprei Katun Jepang Earth Tone Polos", price: "Rp 135.000", orig: "Rp 210.000", why: "Adem, lembut & kamar serasa hotel butik", link: "https://shopee.co.id/" },
+    { no: 3, name: "Reed Diffuser Aroma Sandalwood & Vanilla", price: "Rp 54.000", orig: "Rp 89.000", why: "Ruangan wangi mewah tanpa listrik/api", link: "https://shopee.co.id/" },
+    { no: 4, name: "Vas Keramik Minimalis + Bunga Kering Pampas", price: "Rp 62.000", orig: "Rp 98.000", why: "Sudut meja langsung estetik tanpa perawatan", link: "https://shopee.co.id/" },
+    { no: 5, name: "Cermin Berdiri Standing Mirror Bingkai Kayu", price: "Rp 169.000", orig: "Rp 260.000", why: "Wajib ada buat cek OOTD & bikin kamar luas", link: "https://shopee.co.id/" },
+    { no: 6, name: "Kotak Penyimpanan Rotan Anyaman Tutup", price: "Rp 58.000", orig: "Rp 92.000", why: "Sembunyikan barang printilan biar rapi", link: "https://shopee.co.id/" },
+    { no: 7, name: "Karpet Bulu Halus Motif Bohemian Cream", price: "Rp 89.000", orig: "Rp 145.000", why: "Nyaman di kaki & mempercantik ruang santai", link: "https://shopee.co.id/" },
+    { no: 8, name: "Rak Skincare Putar 360 Derajat Akrilik/Kayu", price: "Rp 65.000", orig: "Rp 105.000", why: "Meja rias rapi & botol skincare gampang diambil", link: "https://shopee.co.id/" },
+    { no: 9, name: "Tirai Gorden Linen Sheer Putih Estetik", price: "Rp 74.000", orig: "Rp 118.000", why: "Cahaya matahari masuk lembut ke dalam kamar", link: "https://shopee.co.id/" },
+    { no: 10, name: "Sarung Bantal Sofa Tekstur Waffle (Set 2)", price: "Rp 48.000", orig: "Rp 78.000", why: "Upgrade tampilan sofa dalam sekejap", link: "https://shopee.co.id/" },
+    { no: 11, name: "Rak Dinding Ambalan Kayu Solid 60cm", price: "Rp 55.000", orig: "Rp 89.000", why: "Pajang buku & tanaman hias dengan rapi", link: "https://shopee.co.id/" },
+    { no: 12, name: "Selimut Rajut Throw Blanket Sofa Cream", price: "Rp 95.000", orig: "Rp 149.000", why: "Hangat buat nonton film & cakep disampirkan", link: "https://shopee.co.id/" },
+    { no: 13, name: "Lilin Aromaterapi Soy Wax Wooden Wick", price: "Rp 44.000", orig: "Rp 72.000", why: "Suara sumbu kayu menenangkan sebelum tidur", link: "https://shopee.co.id/" },
+    { no: 14, name: "Dispenser Sabun Keramik Pump Gold", price: "Rp 39.000", orig: "Rp 65.000", why: "Wastafel kamar mandi kelihatan lebih mewah", link: "https://shopee.co.id/" },
+    { no: 15, name: "Kotak Tisu Kayu & Tutup Bambu Minimalis", price: "Rp 34.000", orig: "Rp 55.000", why: "Kemasan tisu plastik jadi jauh lebih estetik", link: "https://shopee.co.id/" },
+    { no: 16, name: "Tanaman Hias Monstera Artificial Pot Terakota", price: "Rp 49.000", orig: "Rp 79.000", why: "Nuansa hijau segar tanpa takut layu", link: "https://shopee.co.id/" },
+    { no: 17, name: "Hanger Baju Kayu Natural (Set 10 Pcs)", price: "Rp 52.000", orig: "Rp 85.000", why: "Lemari baju tampak seragam & rapi", link: "https://shopee.co.id/" },
+    { no: 18, name: "Keranjang Laundry Lipat Kanvas Earth Tone", price: "Rp 46.000", orig: "Rp 75.000", why: "Baju kotor tertampung rapi & hemat tempat", link: "https://shopee.co.id/" },
+    { no: 19, name: "Jam Dinding Minimalis Silent Sweep Kayu", price: "Rp 64.000", orig: "Rp 102.000", why: "Nggak ada suara detak yang ganggu tidur", link: "https://shopee.co.id/" },
+    { no: 20, name: "Poster Kanvas Botanical Abstract Set 3", price: "Rp 58.000", orig: "Rp 95.000", why: "Dinding kosong langsung hidup & artistik", link: "https://shopee.co.id/" },
+    { no: 21, name: "Keset Kaki Diatomite Cepat Kering", price: "Rp 42.000", orig: "Rp 69.000", why: "Menyerap air instan & anti-bau apek", link: "https://shopee.co.id/" },
+    { no: 22, name: "Toples Kaca Kedap Udara Tutup Bambu (Set 3)", price: "Rp 68.000", orig: "Rp 108.000", why: "Simpan kopi, teh & camilan lebih awet renyah", link: "https://shopee.co.id/" },
+    { no: 23, name: "Nampan Kayu Jati Serving Tray Aesthetic", price: "Rp 45.000", orig: "Rp 72.000", why: "Cocok buat tatakan diffuser atau sarapan di kasur", link: "https://shopee.co.id/" },
+    { no: 24, name: "Lampu Tidur Sensor Gerak LED Tempel", price: "Rp 29.000", orig: "Rp 49.000", why: "Otomatis nyala pas turun kasur tengah malam", link: "https://shopee.co.id/" },
+    { no: 25, name: "Organizer Laci Sekat Pakaian Dalam", price: "Rp 26.000", orig: "Rp 45.000", why: "Isi laci lemari tertata rapi & gampang dicari", link: "https://shopee.co.id/" },
+    { no: 26, name: "Gantungan Kunci & Surat Dinding Kayu", price: "Rp 38.000", orig: "Rp 62.000", why: "Kunci motor/rumah nggak pernah lupa naruh", link: "https://shopee.co.id/" },
+    { no: 27, name: "Humidifier Aromaterapi Wood Grain LED", price: "Rp 75.000", orig: "Rp 120.000", why: "Jaga kelembapan udara di kamar ber-AC", link: "https://shopee.co.id/" },
+    { no: 28, name: "Box Kabel Stop Kontak Cable Management", price: "Rp 35.000", orig: "Rp 58.000", why: "Kabel colokan semrawut jadi rapi & aman", link: "https://shopee.co.id/" },
+    { no: 29, name: "Gelas Kopi Kaca Borosilicate Double Wall", price: "Rp 39.000", orig: "Rp 64.000", why: "Ngopi di rumah serasa di kafe estetik", link: "https://shopee.co.id/" },
+    { no: 30, name: "Papan Pegboard Dinding Organizer Meja", price: "Rp 69.000", orig: "Rp 110.000", why: "Gantung alat tulis & printilan tanpa makan meja", link: "https://shopee.co.id/" }
+  ]
+};
 
-  if(filtered.length === 0) {
-    const empty = document.createElement("div");
-    empty.className = "no-results";
-    empty.textContent = "Belum ada produk di kategori ini. More lovely finds coming soon ♡";
-    grid.appendChild(empty);
+// ============================================================================
+// 3. LOGIKA RENDER & INTERAKSI
+// ============================================================================
+let currentCat = "beauty";
+let currentView = "list";
+let searchQuery = "";
+
+function renderCategories() {
+  const grid = document.getElementById("cat-grid");
+  grid.innerHTML = CATEGORIES.map(c => `
+    <div class="cat-card ${c.id === currentCat ? 'active' : ''}" onclick="selectCategory('${c.id}')">
+      <img src="${c.cover}" alt="${c.name}" onerror="this.src='${FALLBACK_IMG}'">
+      <div class="cat-overlay">
+        <span class="cat-count">List 1–30</span>
+        <div class="cat-eyebrow">${c.eyebrow}</div>
+        <div class="cat-name">${c.name}</div>
+      </div>
+    </div>
+  `).join("");
+}
+
+function selectCategory(catId, shouldScroll = true) {
+  currentCat = catId;
+  renderCategories();
+  renderCatalog();
+  if (shouldScroll) {
+    document.getElementById("katalog").scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+function setView(view) {
+  currentView = view;
+  document.getElementById("btn-list").classList.toggle("active", view === "list");
+  document.getElementById("btn-grid").classList.toggle("active", view === "grid");
+  renderCatalog();
+}
+
+function renderCatalog() {
+  const catObj = CATEGORIES.find(c => c.id === currentCat);
+  document.getElementById("active-cat-title").textContent = `${catObj.name} (#1 – #30)`;
+  document.getElementById("active-cat-desc").textContent = catObj.desc;
+
+  const items = (PRODUCTS_BY_CATEGORY[currentCat] || []).filter(item =>
+    item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    item.why.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
+  const container = document.getElementById("catalog-container");
+  if (!items.length) {
+    container.innerHTML = `<p style="text-align:center; padding:40px; color:var(--muted);">Produk tidak ditemukan di kategori ini.</p>`;
     return;
   }
 
-  filtered.forEach(product => {
-    grid.appendChild(createProductCard(product));
-  });
+  if (currentView === "list") {
+    container.innerHTML = `<div class="numbered-list">${items.map(p => `
+      <div class="list-row">
+        <div class="row-no">#${p.no}</div>
+        <img src="${p.img || catObj.cover}" alt="${p.name}" class="row-thumb" onerror="this.src='${FALLBACK_IMG}'">
+        <div>
+          <div class="row-title">${p.name}</div>
+          <span class="row-why">✓ ${p.why}</span>
+        </div>
+        <div class="row-price-box">
+          <div class="row-price">${p.price}</div>
+          ${p.orig ? `<div class="row-orig">${p.orig}</div>` : ""}
+        </div>
+        <a href="${p.link}" target="_blank" rel="noopener" class="btn-buy">Cek Harga →</a>
+      </div>
+    `).join("")}</div>`;
+  } else {
+    container.innerHTML = `<div class="cards-grid">${items.map(p => `
+      <div class="p-card">
+        <img src="${p.img || catObj.cover}" alt="${p.name}" class="p-card-img" onerror="this.src='${FALLBACK_IMG}'">
+        <div class="p-card-body">
+          <div class="p-card-no">PILIHAN #${p.no} · ${catObj.name.toUpperCase()}</div>
+          <div class="p-card-name">${p.name}</div>
+          <div class="p-card-why">✓ ${p.why}</div>
+          <div class="p-card-price">${p.price}</div>
+          <a href="${p.link}" target="_blank" rel="noopener" class="btn-buy" style="text-align:center;">Cek Harga & Checkout →</a>
+        </div>
+      </div>
+    `).join("")}</div>`;
+  }
 }
 
-function selectCategory(category) {
-
-  activeCategory = category;
-
-  document.querySelectorAll(".filter").forEach(button => {
-    button.classList.toggle(
-      "active",
-      button.dataset.filter === category
-    );
-  });
-
-  renderProducts();
-
-  document.getElementById("shop").scrollIntoView({
-    behavior:"smooth"
-  });
-}
-
-document.querySelectorAll(".filter").forEach(button => {
-  button.addEventListener("click", () => {
-    selectCategory(button.dataset.filter);
-  });
+document.getElementById("search-box").addEventListener("input", e => {
+  searchQuery = e.target.value;
+  renderCatalog();
 });
 
-document.querySelectorAll(".category-card").forEach(button => {
-  button.addEventListener("click", () => {
-    selectCategory(button.dataset.category);
-  });
-});
-
-search.addEventListener("input", event => {
-  searchTerm = event.target.value.trim();
-  renderProducts();
-});
-
-renderProducts();
-
+applyPhotos();
+renderCategories();
+renderCatalog();
 </script>
-
 </body>
 </html>
