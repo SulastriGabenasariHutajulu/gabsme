@@ -751,6 +751,42 @@
       <div class="hero-hook">✦ 7 KATEGORI · MASING-MASING 100 BEST SELLER TERKURASI</div>
       <div class="hero-cta">
         <a href="#curated" class="btn-primary">Jelajahi 700 Best Seller Finds →</a>
+       <!-- GLOBAL SEARCH SEMUA KATEGORI + CARI APAPUN DI SHOPEE -->
+<div class="global-search-box" style="margin: 16px auto; max-width: 720px;">
+  <div style="display: flex; gap: 8px; background: #fff; padding: 8px; border-radius: 16px; border: 1px solid #e5dfd5; box-shadow: 0 4px 14px rgba(0,0,0,0.04);">
+    <input
+      type="text"
+      id="global-search-input"
+      placeholder="Cari di semua 700+ produk (misal: serum, blazer, #045) atau barang Shopee apapun..."
+      oninput="handleGlobalSearch(this.value)"
+      onkeydown="if(event.key==='Enter') scrollToResults()"
+      style="flex: 1; border: none; outline: none; padding: 10px 12px; font-size: 14px; border-radius: 10px; background: #faf6f0;"
+    />
+    <button
+      type="button"
+      id="clear-global-search"
+      onclick="clearGlobalSearch()"
+      style="display: none; background: transparent; border: none; color: #888; font-weight: bold; cursor: pointer; padding: 0 8px;"
+    >
+      ✕
+    </button>
+    <button
+      type="button"
+      onclick="openUniversalShopee()"
+      style="background: #EE4D2D; color: #fff; border: none; border-radius: 12px; padding: 10px 16px; font-weight: 600; font-size: 13px; cursor: pointer; white-space: nowrap;"
+    >
+      Cari di Shopee ↗
+    </button>
+  </div>
+
+  <!-- Info Status Pencarian & Fallback Link Shopee -->
+  <div id="search-status-bar" style="display: none; margin-top: 8px; padding: 10px 14px; background: #fff; border-radius: 12px; border: 1px solid #f0d5ce; font-size: 12px; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap;">
+    <span id="search-status-text" style="color: #231F1E;">Menampilkan hasil pencarian...</span>
+    <a id="fallback-shopee-link" href="https://shopee.co.id" target="_blank" rel="noopener noreferrer" style="color: #EE4D2D; font-weight: 700; text-decoration: none;">
+      Cari langsung di Shopee ↗
+    </a>
+  </div>
+</div>
         <a href="#mediakit" class="btn-secondary">Work With Me & Media Kit</a>
       </div>
 
