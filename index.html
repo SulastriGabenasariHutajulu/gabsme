@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GabsShop — Curated Finds by Lastri | 600+ Best Seller Picks & Creator Portfolio</title>
-<meta name="description" content="WELCOME TO MY LITTLE WORLD ♡ GabsShop — Curated Finds by Lastri (@sulastrihutajuluu). 600 kurasi produk best seller Shopee dalam 6 kategori & Creator Media Kit.">
+<title>Gabs Finds — Little Finds, Real Favorites | Curated by Lastri</title>
+<meta name="description" content="Gabs Finds by Lastri (@sulastrihutajuluu): curated beauty, fashion, lifestyle and everyday finds, plus creator portfolio and brand collaborations.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -366,6 +366,37 @@
   .disclosure { max-width: 820px; margin: 0 auto 10px; font-size: 11.5px; }
   .footer-copy { font-size: 13px; font-weight: 700; color: var(--marigold); }
 
+
+  /* GABS FINDS SIGNATURE PICK */
+  .signature-sec { padding: 8px 0 28px; }
+  .signature-card {
+    display: grid; grid-template-columns: 1.1fr .9fr; gap: 24px; align-items: center;
+    background: linear-gradient(125deg, #FFFDF9, #FCECE6 58%, #FDF3E1);
+    border: 1px solid rgba(200,90,50,.18); border-radius: 26px; padding: 25px 30px;
+    box-shadow: var(--shadow); overflow: hidden;
+  }
+  .signature-copy h2 { font-family: 'Cormorant Garamond', serif; color: var(--forest); font-size: 35px; line-height: 1.05; margin: 0 0 9px; }
+  .signature-copy p { color: var(--muted); font-size: 13px; max-width: 480px; margin-bottom: 13px; }
+  .signature-note { color: var(--sage); font-size: 9px; font-weight: 800; letter-spacing: .12em; margin: 12px 0 16px; }
+  .signature-disclaimer { font-size: 10px !important; margin: 10px 0 0 !important; }
+  .signature-visual { position: relative; min-height: 205px; display: grid; place-items: center; }
+  .fan-art {
+    width: min(100%, 330px); height: 215px; border-radius: 22px; border: 4px solid #fff;
+    background: radial-gradient(circle at 50% 45%, #fff 0 18%, #F7D9D8 19% 20%, transparent 21%),
+                linear-gradient(145deg, #F8E6E1, #F5D5CF 55%, #FCEEDC);
+    box-shadow: 0 10px 28px rgba(35,28,23,.10); display: flex; flex-direction: column;
+    justify-content: center; align-items: center; color: var(--forest); position: relative;
+  }
+  .fan-art strong { font-family: 'Cormorant Garamond',serif; font-size: 31px; letter-spacing: .13em; }
+  .fan-art small { font-size: 9px; font-weight: 800; letter-spacing: .2em; }
+  .fan-art > span:first-child { font-size: 66px; line-height: .9; color: var(--hibiscus); }
+  .fan-icon { position: absolute; right: 24px; bottom: 16px; font-size: 30px; color: var(--terracotta); }
+  .signature-sticker { position: absolute; right: 2px; bottom: 0; background: var(--forest); color: #fff; border-radius: 50%; width: 76px; height: 76px; display: grid; place-content: center; text-align: center; font-family: 'Cormorant Garamond',serif; font-style: italic; font-size: 14px; line-height: 1.05; transform: rotate(8deg); }
+  .nav-links { scrollbar-width: none; }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .btn-primary, .btn-secondary, .btn-shopee, .prod-btn { min-height: 42px; display: inline-flex; align-items: center; justify-content: center; }
+  img { max-width: 100%; }
+
   @media (max-width: 960px) {
     .hero-shell, .brand-grid { grid-template-columns: 1fr; }
     .meet-card { grid-template-columns: 1fr; text-align: center; }
@@ -376,24 +407,61 @@
     .trend-grid, .port-grid { grid-template-columns: repeat(2, 1fr); }
   }
   @media (max-width: 600px) {
-    .nav-links { display: none; }
-    .moodboard { grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(3, 130px); }
-    .edits-grid { grid-template-columns: repeat(2, 1fr); }
+    .container { padding: 0 15px; }
+    .top-ribbon { font-size: 9px; letter-spacing: .07em; padding: 8px 10px; }
+    .nav-inner { padding: 9px 15px 6px; align-items: flex-start; flex-direction: column; gap: 5px; }
+    .logo { font-size: 25px; }
+    .nav-links { display: flex; width: 100%; overflow-x: auto; gap: 16px; padding: 2px 0 8px; white-space: nowrap; }
+    .nav-links a { font-size: 11px; flex: 0 0 auto; }
+    .nav-btn { padding: 7px 12px; }
+    .hero { padding: 16px 0 20px; }
+    .hero-shell { padding: 19px; border-radius: 22px; gap: 17px; }
+    .hero h1 { font-size: clamp(35px, 10vw, 43px); }
+    .hero-sub { font-size: 13px; }
+    .hero-hook { font-size: 10px; line-height: 1.45; }
+    .hero-cta { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .hero-cta a { padding: 11px 9px; text-align: center; font-size: 11px; }
+    .moodboard { grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(3, 112px); gap: 8px; }
+    .meet-sec { padding: 5px 0 18px; }
+    .meet-card { padding: 20px 17px; gap: 12px; border-radius: 22px; }
+    .meet-photo { width: 112px; height: 112px; }
+    .meet-info h2 { font-size: 29px; }
+    .meet-info p { font-size: 12px; }
+    .meet-stats { flex-wrap: wrap; }
+    .stat-pill { padding: 7px 11px; }
+    .sec-head { align-items: flex-start; margin-bottom: 13px; }
+    .sec-head h2 { font-size: 30px; }
+    .sec-head p { font-size: 11.5px; }
+    .signature-card { grid-template-columns: 1fr; padding: 19px; gap: 12px; border-radius: 22px; }
+    .signature-copy h2 { font-size: 31px; }
+    .signature-visual { min-height: 185px; }
+    .fan-art { height: 190px; }
+    .edits-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+    .edit-card { height: 135px; }
+    .catalog-panel { padding: 13px; border-radius: 19px; }
+    .catalog-top { align-items: stretch; }
+    .catalog-top h3 { font-size: 23px; }
+    .search-box { width: 100%; min-height: 43px; }
     .compact-grid { grid-template-columns: 1fr; }
+    .trend-grid, .port-grid { grid-template-columns: 1fr; }
+    .platform-bar { flex-direction: column; gap: 8px; text-align: center; }
+    .contact-actions a, .contact-actions button { width: 100%; }
+    footer { padding: 22px 15px; }
   }
 </style>
 </head>
 <body>
 
-<div class="top-ribbon">✦ 600 Best Seller Shopee Picks · Curated by Lastri (@sulastrihutajuluu) · Anti-Boncos Era ✦</div>
+<div class="top-ribbon">✦ LITTLE FINDS, REAL FAVORITES · CURATED BY LASTRI (@SULASTRIHUTAJULUU) ✦</div>
 
 <!-- NAVIGATION -->
 <nav>
   <div class="nav-inner">
-    <a href="#" class="logo">Gabs<span>Shop</span></a>
+    <a href="#" class="logo">Gabs<span> Finds</span></a>
     <div class="nav-links">
       <a href="#meet">Meet Lastri</a>
-      <a href="#curated">600 Curated Finds</a>
+      <a href="#favorites">My Favorites</a>
+      <a href="#curated">My Curated Finds</a>
       <a href="#trending">Trending</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#mediakit" class="nav-btn">Work With Me</a>
@@ -407,12 +475,12 @@
     <div class="hero-shell">
       <div>
         <div class="eyebrow">WELCOME TO MY LITTLE WORLD ♡</div>
-        <h1>GabsShop — <em>Curated Finds</em> by Lastri</h1>
+        <h1>Gabs Finds — <em>Little Finds, Real Favorites</em></h1>
         <div class="hero-pillars">Beauty · Style · Lifestyle</div>
         <p class="hero-sub">
-          A curated space for beauty discoveries, everyday essentials, and little things worth sharing.
+          A personal edit of beauty discoveries, style favorites, everyday essentials, and little things worth sharing.
         </p>
-        <div class="hero-hook">✦ 600 Shopee Best Sellers (100 List per Kategori) · Siap Checkout</div>
+        <div class="hero-hook">✦ A LITTLE COLLECTION OF THINGS I LOVE, USE & RECOMMEND</div>
         <div class="hero-cta">
           <a href="#curated" class="btn-primary">Shop My Finds →</a>
           <a href="#mediakit" class="btn-secondary">Work With Me</a>
@@ -458,7 +526,7 @@
         <div class="eyebrow" style="color:var(--marigold); margin-bottom:4px;">MEET THE CREATOR</div>
         <h2>Hi, I'm Lastri!</h2>
         <p>
-          Corporate girl by weekdays, beauty enthusiast and lifestyle explorer by heart. Sharing my discoveries in beauty, fashion, travel, and everyday life — semua barang best seller pilihan agar belanjamu selalu worth it.
+          Corporate girl by weekdays, beauty enthusiast and lifestyle explorer by heart. Sharing my discoveries in beauty, fashion, travel, and everyday life — sharing things I genuinely enjoy, useful finds, and little discoveries from everyday life.
         </p>
         <a href="https://instagram.com/sulastrihutajuluu" target="_blank" rel="noopener" class="ig-link">
           ✦ Instagram: @sulastrihutajuluu
@@ -472,6 +540,27 @@
   </div>
 </section>
 
+
+<!-- LASTRI'S SIGNATURE PICK -->
+<section class="signature-sec" id="favorites">
+  <div class="container">
+    <div class="signature-card">
+      <div class="signature-copy">
+        <div class="eyebrow">LASTRI'S TRIED & LOVED</div>
+        <h2>My everyday little lifesaver.</h2>
+        <p>Meet my go-to portable fan for commuting, outdoor plans, and busy days. The Mixio Portable Fan is one of my everyday essentials — practical, handy, and always worth bringing along.</p>
+        <div class="signature-note">MY PERSONAL PICK · GADGETS & DAILY ESSENTIALS</div>
+        <a class="btn-primary" href="https://shopee.co.id/search?keyword=Mixio%20portable%20fan" target="_blank" rel="noopener">Find Mixio on Shopee →</a>
+        <p class="signature-disclaimer">Link Shopee sementara berupa pencarian produk. Ganti dengan link affiliate Mixio milikmu sebelum dipublikasikan.</p>
+      </div>
+      <div class="signature-visual" aria-label="Mixio portable fan featured pick">
+        <div class="fan-art"><span>〰</span><strong>MIXIO</strong><small>PORTABLE FAN</small><span class="fan-icon">✺</span></div>
+        <span class="signature-sticker">Lastri's<br>everyday<br>essential ♡</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- 3. MY CURATED FINDS (6 KATEGORI × 100 BEST SELLER) -->
 <section class="curated-sec" id="curated">
   <div class="container">
@@ -480,7 +569,7 @@
         <div class="eyebrow">A LITTLE COLLECTION OF THINGS I LOVE</div>
         <h2>My Curated Finds (100 List / Kategori)</h2>
       </div>
-      <p>Klik kategori di bawah untuk menjelajahi 100 rekomendasi produk best seller Shopee (#1 – #100).</p>
+      <p>Pilih kategori untuk menjelajahi 100 curated picks (#1–#100). Cari produk favoritmu dengan mudah.</p>
     </div>
 
     <div class="edits-grid" id="edits-grid"></div>
@@ -545,7 +634,7 @@
     </div>
 
     <div class="platform-bar">
-      <div><strong>My Social Platforms:</strong> Instagram (@sulastrihutajuluu) · TikTok · GabsShop</div>
+      <div><strong>My Social Platforms:</strong> Instagram (@sulastrihutajuluu) · TikTok · Gabs Finds</div>
       <span style="color:var(--sage); font-weight:700;">✦ Authentic Storytelling & High-Trust Recommendations</span>
     </div>
   </div>
@@ -569,7 +658,7 @@
           <span>Brand Collaborations</span>
         </div>
       </div>
-      <a href="mailto:collab.sulastrihutajulu@gmail.com?subject=Brand%20Collaboration%20-%20GabsShop" class="btn-primary" style="text-align:center;">
+      <a href="mailto:collab.sulastrihutajulu@gmail.com?subject=Brand%20Collaboration%20-%20Gabs Finds" class="btn-primary" style="text-align:center;">
         Contact for Collaboration →
       </a>
     </div>
@@ -601,9 +690,9 @@
 <!-- 8. AFFILIATE DISCLOSURE & FOOTER -->
 <footer>
   <div class="disclosure">
-    <strong>Affiliate Disclosure:</strong> Beberapa tautan produk di GabsShop merupakan tautan afiliasi Shopee. Pembelian melalui tautan tersebut membantu mendukung kreator tanpa biaya tambahan bagi pembeli.
+    <strong>Affiliate Disclosure:</strong> Beberapa tautan produk di Gabs Finds merupakan tautan afiliasi Shopee. Pembelian melalui tautan tersebut membantu mendukung kreator tanpa biaya tambahan bagi pembeli.
   </div>
-  <div class="footer-copy">GabsShop — Curated Finds by Lastri (@sulastrihutajuluu)</div>
+  <div class="footer-copy">Gabs Finds — Curated Finds by Lastri (@sulastrihutajuluu)</div>
 </footer>
 
 <script>
@@ -621,7 +710,7 @@ const EDITS = [
 
 // ============================================================================
 // DATABASE 100 BEST SELLER SHOPEE PER KATEGORI (TOTAL 600 PRODUK)
-// Cara edit: ganti URL di bagian `link: "..."` dengan link Shopee Affiliate kamu
+// Cara edit: ganti URL di bagian `link: "..."` dengan link Shopee Affiliate kamu.\n// Mixio Portable Fan sudah ditambahkan ke kategori Everyday Little Things dan featured pick.
 // ============================================================================
 const RAW_CATALOG = {
   glow: [
@@ -706,7 +795,7 @@ const RAW_CATALOG = {
     "Topi Pantai Anyaman Lebar Pita Mutiara", "Baju Renang Lengan Panjang UV Protection", "Travel Organizer Pouch Set 7-in-1",
     "Waterproof Phone Case Tali Leher Pantai", "Sandal Pantai EVA Empuk Anti-Air", "Kain Pantai / Sarong Rayon Motif Tropis",
     "Botol Refill Skincare Travel Size Set", "Universal Travel Adapter All-in-One + USB-C", "Kacamata Renang Anti-Fog HD Clear",
-    "Bantal Leher Memory Foam + Penutup Mata", "Tas Lipat Duffel Bag Tambahan Koper", "Kipas Angin Mini Portable Rechargeable",
+    "Bantal Leher Memory Foam + Penutup Mata", "Tas Lipat Duffel Bag Tambahan Koper", { name: "Mixio Portable Fan", price: "Cek harga di Shopee", why: "Andalan Lastri untuk aktivitas harian & outdoor", img: "https://images.unsplash.com/photo-1544816155-12df9643f363?w=500&q=80", link: "https://shopee.co.id/search?keyword=Mixio%20portable%20fan" },
     "Payung Lipat Mini UV Protection Ringan", "Timbangan Koper Digital Gantung Akurat", "Pouch Paspor & Dokumen RFID Blocking",
     "Aloe Vera Soothing Gel 99% After-Sun", "Tas Kosmetik Transparan Waterproof", "Tali Koper Pengaman + Tag Nama",
     "Setrika Uap Mini Lipat Travel", "Kantong Sepatu Travel Anti-Kotor", "Tisu Basah Antiseptik Travel Pack",
@@ -897,7 +986,7 @@ const TRENDING = {
     { badge: "New", name: "Lampu Meja Jamur Warm Aesthetic", price: "Rp 79.000", why: "Suasana kamar hangat", img: "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=500&q=80", link: "https://shopee.co.id/" },
     { badge: "New", name: "Blouse Pita Chiffon Corporate Chic", price: "Rp 95.000", why: "Auto rapi buat ngantor", img: "https://images.unsplash.com/photo-1551163943-3f6a855d1153?w=500&q=80", link: "https://shopee.co.id/" },
     { badge: "New", name: "Tumbler Stainless Insulated 900ml", price: "Rp 89.000", why: "Es awet 24 jam", img: "https://images.unsplash.com/photo-1544816155-12df9643f363?w=500&q=80", link: "https://shopee.co.id/" },
-    { badge: "New", name: "Trekking Pole Lipat Aluminium Ringan", price: "Rp 85.000", why: "Jaga lutut saat nanjak", img: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=500&q=80", link: "https://shopee.co.id/" }
+    { badge: "Lastri’s Pick", name: "Mixio Portable Fan", price: "Cek harga di Shopee", why: "Andalan untuk aktivitas harian & outdoor", img: "https://images.unsplash.com/photo-1544816155-12df9643f363?w=500&q=80", link: "https://shopee.co.id/search?keyword=Mixio%20portable%20fan" }
   ],
   "Worth the Hype?": [
     { badge: "9.8/10", name: "Gimbal Stabilizer HP Lipat + Tripod", price: "Rp 285.000", why: "Video mulus anti-goyang", img: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=500&q=80", link: "https://shopee.co.id/" },
