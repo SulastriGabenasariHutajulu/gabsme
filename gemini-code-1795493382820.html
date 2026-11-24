@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Gabs Finds Mobile — Little Finds, Real Favorites | Curated by Lastri</title>
+<meta name="description" content="Gabs Finds Mobile by Lastri (@sulastrihutajuluu): Christmas Edit Priority, 800 rekomendasi best seller & viral Shopee dalam tampilan mobile-first.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #FAF3E8;
+    --surface: #FFFDF9;
+    --forest: #1B4332;
+    --sage: #2D6A4F;
+    --sage-soft: #E3EFE8;
+    --terracotta: #C85A32;
+    --terracotta-soft: #FCECE6;
+    --hibiscus: #D1496E;
+    --crimson: #B4233C;
+    --marigold: #E09F3E;
+    --marigold-soft: #FDF3E1;
+    --ink: #231C17;
+    --muted: #6A5E55;
+    --border: rgba(27, 67, 50, 0.14);
+    --shadow: 0 10px 26px rgba(35, 28, 23, 0.08);
+    --bottom-nav-h: 68px;
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: #EFE6D8;
+    color: var(--ink);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: calc(var(--bottom-nav-h) + 18px);
+  }
+
+  .mobile-shell {
+    max-width: 480px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: var(--bg);
+    background-image:
+      radial-gradient(at 0% 0%, rgba(224, 159, 62, 0.22) 0px, transparent 48%),
+      radial-gradient(at 100% 8%, rgba(209, 73, 110, 0.18) 0px, transparent 45%),
+      radial-gradient(at 12% 55%, rgba(45, 106, 79, 0.14) 0px, transparent 50%),
+      radial-gradient(at 92% 85%, rgba(200, 90, 50, 0.18) 0px, transparent 50%);
+    box-shadow: 0 0 40px rgba(35, 28, 23, 0.12);
+    position: relative;
+  }
+
+  .top-ribbon {
+    background: linear-gradient(90deg, var(--forest), var(--crimson), var(--terracotta), var(--marigold));
+    color: #fff;
+    text-align: center;
+    font-size: 9.5px;
+    font-weight: 800;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    padding: 7px 10px;
+  }
+
+  .app-header {
+    position: sticky;
+    top: 0;
+    z-index: 90;
+    background: rgba(255, 253, 249, 0.92);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--border);
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--forest);
+    text-decoration: none;
+    line-height: 1;
+  }
+  .logo span { color: var(--terracotta); }
+  .header-pill {
+    font-size: 10.5px;
+    font-weight: 700;
+    background: var(--sage-soft);
+    color: var(--forest);
+    padding: 5px 11px;
+    border-radius: 50px;
+    border: 1px solid rgba(45, 106, 79, 0.2);
+  }
+
+  .hero { padding: 14px 16px 18px; }
+  .hero-card {
+    background: linear-gradient(145deg, rgba(255,253,249,0.96) 0%, rgba(253,243,225,0.94) 55%, rgba(252,236,230,0.94) 100%);
+    border: 1.5px solid rgba(200, 90, 50, 0.22);
+    border-radius: 24px;
+    padding: 20px 18px;
+    box-shadow: var(--shadow);
+  }
+  .eyebrow {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--hibiscus);
+    margin-bottom: 6px;
+  }
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.08;
+    color: var(--forest);
+    margin-bottom: 6px;
+  }
+  .hero h1 em {
+    font-style: italic;
+    background: linear-gradient(120deg, var(--terracotta), var(--hibiscus));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero-pillars {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-bottom: 10px;
+  }
+  .hero-sub {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+  .hero-hook {
+    display: inline-block;
+    background: linear-gradient(135deg, #FCE8EC, var(--marigold-soft));
+    border: 1px solid rgba(180, 35, 60, 0.28);
+    color: var(--crimson);
+    font-size: 10.5px;
+    font-weight: 800;
+    padding: 6px 12px;
+    border-radius: 14px;
+    margin-bottom: 14px;
+  }
+  .hero-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 44px;
+    padding: 11px 18px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, var(--terracotta), var(--hibiscus));
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(200, 90, 50, 0.24);
+  }
+  .btn-secondary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 42px;
+    padding: 10px 18px;
+    border-radius: 50px;
+    background: var(--surface);
+    color: var(--forest);
+    font-weight: 700;
+    font-size: 12.5px;
+    text-decoration: none;
+    border: 1.5px solid var(--forest);
+    cursor: pointer;
+  }
+
+  .story-strip {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+  .story-strip::-webkit-scrollbar { display: none; }
+  .story-tile {
+    flex: 0 0 116px;
+    height: 132px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #fff;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    cursor: pointer;
+  }
+  .story-tile.christmas-priority {
+    border: 2.5px solid var(--crimson);
+  }
+  .story-tile img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .story-label {
+    position: absolute;
+    bottom: 6px;
+    left: 6px;
+    right: 6px;
+    background: rgba(27, 67, 50, 0.88);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 3px 7px;
+    border-radius: 50px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .story-tile.christmas-priority .story-label {
+    background: linear-gradient(90deg, var(--crimson), var(--forest));
+  }
+
+  .section-block { padding: 10px 16px 18px; }
+  .meet-card {
+    background: linear-gradient(145deg, var(--forest) 0%, #275A44 60%, var(--terracotta) 100%);
+    color: #fff;
+    border-radius: 24px;
+    padding: 22px 18px;
+    text-align: center;
+    box-shadow: var(--shadow);
+  }
+  .meet-photo {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3.5px solid var(--marigold);
+    margin: 0 auto 12px;
+    display: block;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.22);
+  }
+  .meet-card h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 29px;
+    line-height: 1.1;
+    margin-bottom: 6px;
+  }
+  .meet-card p {
+    font-size: 12.5px;
+    color: rgba(255,255,255,0.92);
+    margin-bottom: 12px;
+  }
+  .ig-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #FFFDF9;
+    color: var(--terracotta);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 7px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-bottom: 14px;
+  }
+  .meet-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .stat-pill {
+    background: rgba(255,255,255,0.14);
+    border: 1px solid rgba(255,255,255,0.24);
+    padding: 9px 13px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .stat-pill strong { font-size: 13.5px; color: var(--marigold); }
+  .stat-pill span { font-size: 11.5px; color: #fff; font-weight: 600; }
+
+  /* SIGNATURE & THUMB POINT SPOTLIGHT */
+  .signature-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .signature-card {
+    background: linear-gradient(145deg, #FFFDF9, #FCECE6 58%, #FDF3E1);
+    border: 1.5px solid rgba(200,90,50,0.22);
+    border-radius: 24px;
+    padding: 18px;
+    box-shadow: var(--shadow);
+  }
+  .signature-card.thumb-point-hero {
+    background: linear-gradient(145deg, #FFFDF9 0%, #FDF3E1 48%, #FCE8EC 100%);
+    border: 2px solid var(--crimson);
+    box-shadow: 0 14px 30px rgba(180, 35, 60, 0.16);
+  }
+  .sig-img-wrap {
+    width: 100%;
+    height: 205px;
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 14px;
+    border: 2px solid #fff;
+    background: #1B4332;
+  }
+  .sig-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+  .sig-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--forest);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 50px;
+  }
+  .sig-badge.viral-badge {
+    background: linear-gradient(90deg, var(--crimson), var(--terracotta));
+    box-shadow: 0 4px 12px rgba(180, 35, 60, 0.35);
+  }
+  .sig-rating-tag {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(255,253,249,0.96);
+    color: var(--terracotta);
+    font-size: 12px;
+    font-weight: 800;
+    padding: 5px 12px;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  }
+  .signature-card h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    color: var(--forest);
+    line-height: 1.12;
+    margin-bottom: 6px;
+  }
+  .signature-card p { font-size: 12.5px; color: var(--muted); margin-bottom: 12px; }
+
+  .sec-title-wrap { margin-bottom: 12px; }
+  .sec-title-wrap h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    color: var(--forest);
+    line-height: 1.1;
+    margin-bottom: 4px;
+  }
+  .sec-title-wrap p { font-size: 12px; color: var(--muted); }
+
+  /* 8 CATEGORIES CAROUSEL */
+  .cat-carousel {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 4px 0 12px;
+    scrollbar-width: none;
+  }
+  .cat-carousel::-webkit-scrollbar { display: none; }
+  .edit-card {
+    flex: 0 0 148px;
+    height: 152px;
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border: 3px solid transparent;
+    box-shadow: 0 6px 16px rgba(35,28,23,0.1);
+    transition: transform 0.2s;
+  }
+  .edit-card.active {
+    border-color: var(--hibiscus);
+    transform: translateY(-2px);
+  }
+  .edit-card.priority-cat {
+    border-color: var(--crimson);
+  }
+  .edit-card img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.72); }
+  .edit-badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: rgba(255,253,249,0.94);
+    color: var(--forest);
+    font-size: 9px;
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 50px;
+  }
+  .edit-badge.christmas-tag {
+    background: linear-gradient(90deg, var(--crimson), var(--forest));
+    color: #fff;
+  }
+  .edit-overlay {
+    position: absolute;
+    inset: 0;
+    padding: 10px;
+    background: linear-gradient(180deg, transparent 20%, rgba(20,16,13,0.88) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+  }
+  .edit-overlay small { font-size: 8.5px; color: var(--marigold); font-weight: 700; text-transform: uppercase; }
+  .edit-overlay strong { font-family: 'Cormorant Garamond', serif; font-size: 17px; line-height: 1.1; }
+
+  .catalog-panel {
+    background: var(--surface);
+    border: 1.5px solid rgba(45,106,79,0.18);
+    border-radius: 22px;
+    padding: 14px;
+    box-shadow: var(--shadow);
+  }
+  .catalog-head {
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 12px;
+  }
+  .catalog-head h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    color: var(--forest);
+    line-height: 1.15;
+  }
+  .catalog-sub-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4px;
+    margin-bottom: 10px;
+  }
+  .catalog-count { font-size: 11.5px; color: var(--muted); font-weight: 600; }
+  .verified-pill {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--sage);
+    background: var(--sage-soft);
+    padding: 2px 8px;
+    border-radius: 50px;
+  }
+  .search-box {
+    width: 100%;
+    min-height: 42px;
+    padding: 9px 15px;
+    border-radius: 50px;
+    border: 1.5px solid var(--border);
+    background: var(--bg);
+    font-size: 13px;
+    outline: none;
+  }
+  .search-box:focus { border-color: var(--terracotta); }
+
+  .single-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .prod-row {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    background: linear-gradient(135deg, #FFFDF9, #FAF4EB);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 9px 10px;
+    text-decoration: none;
+    color: inherit;
+  }
+  .prod-row.featured-row {
+    border: 1.5px solid rgba(180, 35, 60, 0.35);
+    background: linear-gradient(135deg, #FFFDF9, #FCE8EC 100%);
+  }
+  .prod-row:active { transform: scale(0.99); border-color: var(--terracotta); }
+  .prod-thumb {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0;
+    background: var(--marigold-soft);
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  .prod-meta { min-width: 0; flex: 1; }
+  .prod-no { font-size: 9.5px; font-weight: 800; color: var(--hibiscus); letter-spacing: 0.04em; }
+  .prod-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .prod-why {
+    font-size: 10.5px;
+    color: var(--sage);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 2px;
+  }
+  .prod-rating-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 3px;
+    flex-wrap: wrap;
+  }
+  .rating-badge {
+    font-size: 10.5px;
+    font-weight: 800;
+    color: #B4690E;
+    background: var(--marigold-soft);
+    padding: 2px 7px;
+    border-radius: 50px;
+  }
+  .sold-tag {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--forest);
+  }
+  .prod-btn {
+    font-size: 11px;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--terracotta), var(--hibiscus));
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 50px;
+    flex-shrink: 0;
+  }
+
+  .load-more-wrap {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .trend-tabs {
+    display: flex;
+    gap: 7px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+  }
+  .trend-tabs::-webkit-scrollbar { display: none; }
+  .trend-tab {
+    flex: 0 0 auto;
+    padding: 7px 14px;
+    border-radius: 50px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    font-size: 11.5px;
+    font-weight: 700;
+    color: var(--muted);
+    cursor: pointer;
+  }
+  .trend-tab.active {
+    background: linear-gradient(135deg, var(--terracotta), var(--hibiscus));
+    color: #fff;
+    border-color: transparent;
+  }
+  .trend-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .trend-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  .trend-card.viral-highlight {
+    border: 2px solid var(--crimson);
+  }
+  .trend-img { position: relative; height: 195px; overflow: hidden; }
+  .trend-img img { width: 100%; height: 100%; object-fit: cover; }
+  .trend-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--marigold);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 4px 11px;
+    border-radius: 50px;
+  }
+  .trend-badge.viral {
+    background: linear-gradient(90deg, var(--crimson), var(--terracotta));
+  }
+  .trend-body { padding: 14px; }
+  .trend-title { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+  .trend-why { font-size: 11.5px; color: var(--sage); font-weight: 600; margin-bottom: 8px; }
+  .trend-meta-pills {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 11px;
+  }
+
+  .port-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .port-card {
+    position: relative;
+    height: 175px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    border: 2px solid #fff;
+  }
+  .port-card img { width: 100%; height: 100%; object-fit: cover; }
+  .port-overlay {
+    position: absolute;
+    inset: 0;
+    padding: 15px;
+    background: linear-gradient(180deg, transparent 30%, rgba(20,16,13,0.88) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+  }
+  .port-overlay span { font-size: 9.5px; font-weight: 700; color: var(--marigold); text-transform: uppercase; letter-spacing: 0.1em; }
+  .port-overlay h4 { font-family: 'Cormorant Garamond', serif; font-size: 22px; }
+
+  .collab-box {
+    background: linear-gradient(145deg, var(--forest) 0%, #275341 55%, var(--hibiscus) 100%);
+    color: #fff;
+    border-radius: 24px;
+    padding: 22px 18px;
+    margin-bottom: 14px;
+    box-shadow: var(--shadow);
+  }
+  .collab-box h2 { font-family: 'Cormorant Garamond', serif; font-size: 32px; line-height: 1.1; margin-bottom: 8px; }
+  .collab-box p { font-size: 12.5px; color: rgba(255,255,255,0.92); margin-bottom: 14px; }
+  .collab-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+  .collab-tags span {
+    background: rgba(255,255,255,0.16);
+    border: 1px solid rgba(255,255,255,0.28);
+    padding: 4px 11px;
+    border-radius: 50px;
+    font-size: 10.5px;
+    font-weight: 600;
+  }
+
+  .mediakit-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 20px 18px;
+    box-shadow: var(--shadow);
+  }
+  .mediakit-box h3 { font-family: 'Cormorant Garamond', serif; font-size: 26px; color: var(--forest); margin-bottom: 12px; }
+  .metrics-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .metric-card {
+    background: linear-gradient(135deg, var(--marigold-soft), var(--terracotta-soft));
+    border: 1px solid rgba(200,90,50,0.15);
+    border-radius: 14px;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .metric-card small { font-size: 11.5px; color: var(--muted); font-weight: 600; }
+  .metric-card strong { font-family: 'Cormorant Garamond', serif; font-size: 22px; color: var(--terracotta); }
+  .demo-row {
+    font-size: 11.5px;
+    color: var(--ink);
+    background: var(--sage-soft);
+    padding: 10px 12px;
+    border-radius: 12px;
+    margin-bottom: 14px;
+  }
+  .contact-actions { display: flex; flex-direction: column; gap: 8px; }
+
+  footer {
+    background: linear-gradient(90deg, var(--forest), #25513F);
+    color: rgba(255,255,255,0.88);
+    padding: 22px 16px 28px;
+    text-align: center;
+    margin-top: 8px;
+  }
+  .disclosure { font-size: 11px; margin-bottom: 8px; }
+  .footer-copy { font-size: 12.5px; font-weight: 700; color: var(--marigold); }
+
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 480px;
+    height: var(--bottom-nav-h);
+    background: rgba(255, 253, 249, 0.96);
+    backdrop-filter: blur(16px);
+    border-top: 1px solid var(--border);
+    box-shadow: 0 -6px 22px rgba(35, 28, 23, 0.08);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 120;
+    padding: 4px 6px;
+  }
+  .bnav-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--muted);
+    font-size: 10px;
+    font-weight: 700;
+    gap: 3px;
+    padding: 6px 2px;
+    border-radius: 12px;
+    transition: all 0.2s;
+  }
+  .bnav-item svg { width: 20px; height: 20px; stroke-width: 2.1; }
+  .bnav-item.active, .bnav-item:hover {
+    color: var(--terracotta);
+    background: var(--terracotta-soft);
+  }
+</style>
+</head>
+<body>
+
+<div class="mobile-shell">
+  <div class="top-ribbon">🎄 CHRISTMAS EDIT PRIORITY · 8 KATEGORI × 100 BEST SELLER ✦</div>
+
+  <!-- TOP HEADER -->
+  <header class="app-header">
+    <a href="#top" class="logo">Gabs<span> Finds</span></a>
+    <span class="header-pill">🎄 800 Best Seller Picks ★</span>
+  </header>
+
+  <!-- 1. HERO SECTION -->
+  <section class="hero" id="top">
+    <div class="hero-card">
+      <div class="eyebrow">DECEMBER & CHRISTMAS SPECIAL EDITION 🎄</div>
+      <h1>Gabs Finds — <em>Little Finds, Real Favorites</em></h1>
+      <div class="hero-pillars">Christmas · Beauty · Style · Gadgets</div>
+      <p class="hero-sub">
+        Koleksi kurasi spesial Natal & akhir tahun bersama produk beauty, fashion, travel, dan creator gear paling viral & top rated di Shopee.
+      </p>
+      <div class="hero-hook">🎄 PRIORITAS DESEMBER: THE CHRISTMAS EDIT + 800 BEST SELLER</div>
+      <div class="hero-cta">
+        <a href="#curated" class="btn-primary">🎄 Buka Priority Christmas Edit →</a>
+        <a href="#favorites" class="btn-secondary">🔥 Lihat Viral Thumb Point: Osmo Pocket 3</a>
+      </div>
+
+      <div class="story-strip">
+        <div class="story-tile christmas-priority" onclick="jumpToCategory('christmas')">
+          <img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=400&q=80" alt="The Christmas Edit">
+          <span class="story-label">🎄 Christmas</span>
+        </div>
+        <div class="story-tile" onclick="jumpToCategory('glow')">
+          <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&q=80" alt="The Glow Edit">
+          <span class="story-label">Glow Edit</span>
+        </div>
+        <div class="story-tile" onclick="jumpToCategory('style')">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=400&q=80" alt="The Style Edit">
+          <span class="story-label">Style Edit</span>
+        </div>
+        <div class="story-tile" onclick="jumpToCategory('travel')">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80" alt="The Travel Edit">
+          <span class="story-label">Travel Edit</span>
+        </div>
+        <div class="story-tile" onclick="jumpToCategory('gadgets')">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&q=80" alt="Tech & Gadgets">
+          <span class="story-label">Tech & Gadgets</span>
+        </div>
+        <div class="story-tile" onclick="jumpToCategory('everyday')">
+          <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=400&q=80" alt="Everyday Things">
+          <span class="story-label">Everyday</span>
+        </div>
+        <div class="story-tile" onclick="jumpToCategory('cozy')">
+          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=400&q=80" alt="Cozy Corner">
+          <span class="story-label">Cozy Corner</span>
+        </div>
+        <div class="story-tile" onclick="jumpToCategory('adventure')">
+          <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&q=80" alt="Adventure Edit">
+          <span class="story-label">Adventure</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THUMB POINT & SIGNATURE PICKS -->
+  <section class="section-block" id="favorites">
+    <div class="signature-stack">
+      <!-- THUMB POINT UTAMA: DJI OSMO POCKET 3 (VIRAL) -->
+      <div class="signature-card thumb-point-hero">
+        <div class="sig-img-wrap">
+          <img
+            src="https://down-id.img.susercontent.com/file/id-11134207-81ztd-muc1lr2wne9va7.webp"
+            onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&q=80';"
+            alt="DJI Osmo Pocket 3 - Pocket Gimbal Camera">
+          <span class="sig-badge viral-badge">🔥 VIRAL · THUMB POINT</span>
+          <span class="sig-rating-tag">★ 5.0 · Viral Creator Gear</span>
+        </div>
+        <div class="eyebrow">THUMB POINT SPOTLIGHT · VIRAL POCKET GIMBAL</div>
+        <h2>DJI Osmo Pocket 3 — Pocket Gimbal Camera</h2>
+        <p>
+          Kamera pocket gimbal paling viral & jadi andalan utama ngonten liburan Natal dan akhir tahun! Sensor 1-Inch CMOS, video super mulus 4K 120fps, serta 10-Bit D-Log M & HLG yang ringkas masuk saku.
+        </p>
+        <a class="btn-primary" href="https://shopee.co.id/DJI-Osmo-Pocket-3-Pocket-Gimbal-Camera-1-Inch-CMOS-4K-120fps-10-Bit-D-Log-M-HLG-i.364304967.15699613450?extraParams=%7B%22display_model_id%22%3A185627662749%2C%22model_selection_logic%22%3A3%7D&image_ids=id-11134207-81ztd-muc1lr2wne9va7" target="_blank" rel="noopener">Cek DJI Osmo Pocket 3 di Shopee →</a>
+      </div>
+
+      <!-- SIGNATURE PICK 2: MIXIO FAN -->
+      <div class="signature-card">
+        <div class="sig-img-wrap">
+          <img
+            src="https://down-id.img.susercontent.com/file/id-11134207-81zth-mef7mt3jm9dt58.webp"
+            onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1591123720164-de1348028a82?w=600&q=80';"
+            alt="Mixio Portable Mini Fan">
+          <span class="sig-badge">LASTRI'S TRIED & LOVED</span>
+          <span class="sig-rating-tag">★ 4.9 · Best Seller</span>
+        </div>
+        <div class="eyebrow">EVERYDAY LITTLE LIFESAVER</div>
+        <h2>Mixio Portable High-Speed Fan</h2>
+        <p>
+          Andalan wajib di tas buat commuting, cuaca panas, dan aktivitas outdoor. Angin kencang, baterai awet, dan ringkas dibawa ke mana saja.
+        </p>
+        <a class="btn-secondary" href="https://shopee.co.id/MIXIO-GS-12-High-Speed-AC-Cooling-Fan-Portable-Kipas-Angin-Turbo-Portable-18000Rpm-Es-Pendingin-5000Mah-i.366300546.29741305421?extraParams=%7B%22display_model_id%22%3A188694605255%2C%22model_selection_logic%22%3A3%7D&image_ids=id-11134207-81ztm-mef7mt3orocgdc#:~:text=Es%20Pendingin%205000Mah-,Share,-%3A" target="_blank" rel="noopener">Lihat Produk di Shopee →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. MEET LASTRI -->
+  <section class="section-block" id="meet">
+    <div class="meet-card">
+      <img src="
